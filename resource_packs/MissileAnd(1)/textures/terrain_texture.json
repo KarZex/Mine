@@ -1,0 +1,272 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "tnt1_top": { "textures": [ "textures/blocks/tnt1_top" ] },
+    "tnt1_side": { "textures": [ "textures/blocks/tnt1" ] },
+    "tnt1_bottom": { "textures": [ "textures/blocks/tnt1_bottom" ] },
+	
+    "tnt2_top": { "textures": [ "textures/blocks/tnt2_top" ] },
+    "tnt2_side": { "textures": [ "textures/blocks/tnt2" ] },
+    "tnt2_bottom": { "textures": [ "textures/blocks/tnt2_bottom" ] },
+	
+    "tnt3_top": { "textures": [ "textures/blocks/tnt3_top" ] },
+    "tnt3_side": { "textures": [ "textures/blocks/tnt3" ] },
+    "tnt3_bottom": { "textures": [ "textures/blocks/tnt3_bottom" ] },
+	
+    "tnt4_top": { "textures": [ "textures/blocks/tnt4_top" ] },
+    "tnt4_side": { "textures": [ "textures/blocks/tnt4" ] },
+    "tnt4_bottom": { "textures": [ "textures/blocks/tnt4_bottom" ] },
+	
+    "tnt5_top": { "textures": [ "textures/blocks/tnt5_top" ] },
+    "tnt5_side": { "textures": [ "textures/blocks/tnt5" ] },
+    "tnt5_bottom": { "textures": [ "textures/blocks/tnt5_bottom" ] },
+	
+    "tnt6_top": { "textures": [ "textures/blocks/tnt6_top" ] },
+    "tnt6_side": { "textures": [ "textures/blocks/tnt6" ] },
+    "tnt6_bottom": { "textures": [ "textures/blocks/tnt6_bottom" ] },
+	
+    "tnt7_top": { "textures": [ "textures/blocks/tnt7_top" ] },
+    "tnt7_side": { "textures": [ "textures/blocks/tnt7" ] },
+    "tnt7_bottom": { "textures": [ "textures/blocks/tnt7_bottom" ] },
+	
+    "tnt8_top": { "textures": [ "textures/blocks/tnt8_top" ] },
+    "tnt8_side": { "textures": [ "textures/blocks/tnt8" ] },
+    "tnt8_bottom": { "textures": [ "textures/blocks/tnt8_bottom" ] },
+	
+    "tnt9_top": { "textures": [ "textures/blocks/tnt9_top" ] },
+    "tnt9_side": { "textures": [ "textures/blocks/tnt9" ] },
+    "tnt9_bottom": { "textures": [ "textures/blocks/tnt9_bottom" ] },
+	
+    "tnt10_top": { "textures": [ "textures/blocks/tnt10_top" ] },
+    "tnt10_side": { "textures": [ "textures/blocks/tnt10" ] },
+    "tnt10_bottom": { "textures": [ "textures/blocks/tnt10_bottom" ] },
+	
+    "tnt11_top": { "textures": [ "textures/blocks/tnt11_top" ] },
+    "tnt11_side": { "textures": [ "textures/blocks/tnt11" ] },
+    "tnt11_bottom": { "textures": [ "textures/blocks/tnt11_bottom" ] },
+	
+    "tnt12_top": { "textures": [ "textures/blocks/tnt12_top" ] },
+    "tnt12_side": { "textures": [ "textures/blocks/tnt12" ] },
+    "tnt12_bottom": { "textures": [ "textures/blocks/tnt12_bottom" ] },
+	
+    "tnt13_top": { "textures": [ "textures/blocks/tnt13_top" ] },
+    "tnt13_side": { "textures": [ "textures/blocks/tnt13" ] },
+    "tnt13_bottom": { "textures": [ "textures/blocks/tnt13_bottom" ] },
+	
+    "tnt14_top": { "textures": [ "textures/blocks/tnt14_top" ] },
+    "tnt14_side": { "textures": [ "textures/blocks/tnt14" ] },
+    "tnt14_bottom": { "textures": [ "textures/blocks/tnt14_bottom" ] },
+	
+    "tnt15_top": { "textures": [ "textures/blocks/tnt15_top" ] },
+    "tnt15_side": { "textures": [ "textures/blocks/tnt15" ] },
+    "tnt15_bottom": { "textures": [ "textures/blocks/tnt15_bottom" ] },
+	
+    "tnt16_top": { "textures": [ "textures/blocks/tnt16_top" ] },
+    "tnt16_side": { "textures": [ "textures/blocks/tnt16" ] },
+    "tnt16_bottom": { "textures": [ "textures/blocks/tnt16_bottom" ] },
+	
+    "tnt17_top": { "textures": [ "textures/blocks/tnt17_top" ] },
+    "tnt17_side": { "textures": [ "textures/blocks/tnt17" ] },
+    "tnt17_bottom": { "textures": [ "textures/blocks/tnt17_bottom" ] },
+	
+    "tnt18_top": { "textures": [ "textures/blocks/tnt18_top" ] },
+    "tnt18_side": { "textures": [ "textures/blocks/tnt18" ] },
+    "tnt18_bottom": { "textures": [ "textures/blocks/tnt18_bottom" ] },
+	
+    "tnt19_top": { "textures": [ "textures/blocks/tnt19_top" ] },
+    "tnt19_side": { "textures": [ "textures/blocks/tnt19" ] },
+    "tnt19_bottom": { "textures": [ "textures/blocks/tnt19_bottom" ] },
+	
+    "tnt20_top": { "textures": [ "textures/blocks/tnt20_top" ] },
+    "tnt20_side": { "textures": [ "textures/blocks/tnt20" ] },
+    "tnt20_bottom": { "textures": [ "textures/blocks/tnt20_bottom" ] },
+	
+    "tnt21_top": { "textures": [ "textures/blocks/tnt21_top" ] },
+    "tnt21_side": { "textures": [ "textures/blocks/tnt21" ] },
+    "tnt21_bottom": { "textures": [ "textures/blocks/tnt21_bottom" ] },
+	
+    "tnt22_top": { "textures": [ "textures/blocks/tnt22_top" ] },
+    "tnt22_side": { "textures": [ "textures/blocks/tnt22" ] },
+    "tnt22_bottom": { "textures": [ "textures/blocks/tnt22_bottom" ] },
+	
+    "tnt23_top": { "textures": [ "textures/blocks/tnt23_top" ] },
+    "tnt23_side": { "textures": [ "textures/blocks/tnt23" ] },
+    "tnt23_bottom": { "textures": [ "textures/blocks/tnt23_bottom" ] },
+	
+    "tnt24_top": { "textures": [ "textures/blocks/tnt24_top" ] },
+    "tnt24_side": { "textures": [ "textures/blocks/tnt24" ] },
+    "tnt24_bottom": { "textures": [ "textures/blocks/tnt24_bottom" ] },
+	
+    "tnt25_top": { "textures": [ "textures/blocks/tnt25_top" ] },
+    "tnt25_side": { "textures": [ "textures/blocks/tnt25" ] },
+    "tnt25_bottom": { "textures": [ "textures/blocks/tnt25_bottom" ] },
+	
+    "tnt26_top": { "textures": [ "textures/blocks/tnt26_top" ] },
+    "tnt26_side": { "textures": [ "textures/blocks/tnt26" ] },
+    "tnt26_bottom": { "textures": [ "textures/blocks/tnt26_bottom" ] },
+	
+    "tnt27_top": { "textures": [ "textures/blocks/tnt27_top" ] },
+    "tnt27_side": { "textures": [ "textures/blocks/tnt27" ] },
+    "tnt27_bottom": { "textures": [ "textures/blocks/tnt27_bottom" ] },
+	
+    "tnt28_top": { "textures": [ "textures/blocks/tnt28_top" ] },
+    "tnt28_side": { "textures": [ "textures/blocks/tnt28" ] },
+    "tnt28_bottom": { "textures": [ "textures/blocks/tnt28_bottom" ] },
+	
+    "tnt29_top": { "textures": [ "textures/blocks/tnt29_top" ] },
+    "tnt29_side": { "textures": [ "textures/blocks/tnt29" ] },
+    "tnt29_bottom": { "textures": [ "textures/blocks/tnt29_bottom" ] },
+	
+    "tnt30_top": { "textures": [ "textures/blocks/tnt30_top" ] },
+    "tnt30_side": { "textures": [ "textures/blocks/tnt30" ] },
+    "tnt30_bottom": { "textures": [ "textures/blocks/tnt30_bottom" ] },
+	
+    "tnt31_top": { "textures": [ "textures/blocks/tnt31_top" ] },
+    "tnt31_side": { "textures": [ "textures/blocks/tnt31" ] },
+    "tnt31_bottom": { "textures": [ "textures/blocks/tnt31_bottom" ] },
+	
+    "tnt32_top": { "textures": [ "textures/blocks/tnt32_top" ] },
+    "tnt32_side": { "textures": [ "textures/blocks/tnt32" ] },
+    "tnt32_bottom": { "textures": [ "textures/blocks/tnt32_bottom" ] },
+	
+    "tnt33_top": { "textures": [ "textures/blocks/tnt33_top" ] },
+    "tnt33_side": { "textures": [ "textures/blocks/tnt33" ] },
+    "tnt33_bottom": { "textures": [ "textures/blocks/tnt33_bottom" ] },
+	
+    "tnt34_top": { "textures": [ "textures/blocks/tnt34_top" ] },
+    "tnt34_side": { "textures": [ "textures/blocks/tnt34" ] },
+    "tnt34_bottom": { "textures": [ "textures/blocks/tnt34_bottom" ] },
+	
+    "tnt35_top": { "textures": [ "textures/blocks/tnt35_top" ] },
+    "tnt35_side": { "textures": [ "textures/blocks/tnt35" ] },
+    "tnt35_bottom": { "textures": [ "textures/blocks/tnt35_bottom" ] },
+	
+    "tnt36_top": { "textures": [ "textures/blocks/tnt36_top" ] },
+    "tnt36_side": { "textures": [ "textures/blocks/tnt36" ] },
+    "tnt36_bottom": { "textures": [ "textures/blocks/tnt36_bottom" ] },
+	
+    "tnt37_top": { "textures": [ "textures/blocks/tnt37_top" ] },
+    "tnt37_side": { "textures": [ "textures/blocks/tnt37" ] },
+    "tnt37_bottom": { "textures": [ "textures/blocks/tnt37_bottom" ] },
+	
+    "tnt38_top": { "textures": [ "textures/blocks/tnt38_top" ] },
+    "tnt38_side": { "textures": [ "textures/blocks/tnt38" ] },
+    "tnt38_bottom": { "textures": [ "textures/blocks/tnt38_bottom" ] },
+	
+    "tnt39_top": { "textures": [ "textures/blocks/tnt39_top" ] },
+    "tnt39_side": { "textures": [ "textures/blocks/tnt39" ] },
+    "tnt39_bottom": { "textures": [ "textures/blocks/tnt39_bottom" ] },
+	
+    "tnt40_top": { "textures": [ "textures/blocks/tnt40_top" ] },
+    "tnt40_side": { "textures": [ "textures/blocks/tnt40" ] },
+    "tnt40_bottom": { "textures": [ "textures/blocks/tnt40_bottom" ] },
+	
+    "tnt41_top": { "textures": [ "textures/blocks/tnt41_top" ] },
+    "tnt41_side": { "textures": [ "textures/blocks/tnt41" ] },
+    "tnt41_bottom": { "textures": [ "textures/blocks/tnt41_bottom" ] },
+	
+    "tnt42_top": { "textures": [ "textures/blocks/tnt42_top" ] },
+    "tnt42_side": { "textures": [ "textures/blocks/tnt42" ] },
+    "tnt42_bottom": { "textures": [ "textures/blocks/tnt42_bottom" ] },
+	
+    "tnt43_top": { "textures": [ "textures/blocks/tnt43_top" ] },
+    "tnt43_side": { "textures": [ "textures/blocks/tnt43" ] },
+    "tnt43_bottom": { "textures": [ "textures/blocks/tnt43_bottom" ] },
+	
+    "tnt44_top": { "textures": [ "textures/blocks/tnt44_top" ] },
+    "tnt44_side": { "textures": [ "textures/blocks/tnt44" ] },
+    "tnt44_bottom": { "textures": [ "textures/blocks/tnt44_bottom" ] },
+	
+    "tnt45_top": { "textures": [ "textures/blocks/tnt45_top" ] },
+    "tnt45_side": { "textures": [ "textures/blocks/tnt45" ] },
+    "tnt45_bottom": { "textures": [ "textures/blocks/tnt45_bottom" ] },
+	
+    "tnt46_top": { "textures": [ "textures/blocks/tnt46_top" ] },
+    "tnt46_side": { "textures": [ "textures/blocks/tnt46" ] },
+    "tnt46_bottom": { "textures": [ "textures/blocks/tnt46_bottom" ] },
+	
+    "tnt47_top": { "textures": [ "textures/blocks/tnt47_top" ] },
+    "tnt47_side": { "textures": [ "textures/blocks/tnt47" ] },
+    "tnt47_bottom": { "textures": [ "textures/blocks/tnt47_bottom" ] },
+	
+    "tnt48_top": { "textures": [ "textures/blocks/tnt48_top" ] },
+    "tnt48_side": { "textures": [ "textures/blocks/tnt48" ] },
+    "tnt48_bottom": { "textures": [ "textures/blocks/tnt48_bottom" ] },
+	
+    "tnt49_top": { "textures": [ "textures/blocks/tnt49_top" ] },
+    "tnt49_side": { "textures": [ "textures/blocks/tnt49" ] },
+    "tnt49_bottom": { "textures": [ "textures/blocks/tnt49_bottom" ] },
+	
+    "tnt50_top": { "textures": [ "textures/blocks/tnt50_top" ] },
+    "tnt50_side": { "textures": [ "textures/blocks/tnt50" ] },
+    "tnt50_bottom": { "textures": [ "textures/blocks/tnt50_bottom" ] },
+	
+    "tnt51_top": { "textures": [ "textures/blocks/tnt51_top" ] },
+    "tnt51_side": { "textures": [ "textures/blocks/tnt51" ] },
+    "tnt51_bottom": { "textures": [ "textures/blocks/tnt51_bottom" ] },
+	
+    "tnt52_top": { "textures": [ "textures/blocks/tnt52_top" ] },
+    "tnt52_side": { "textures": [ "textures/blocks/tnt52" ] },
+    "tnt52_bottom": { "textures": [ "textures/blocks/tnt52_bottom" ] },
+	
+    "tnt53_top": { "textures": [ "textures/blocks/tnt53_top" ] },
+    "tnt53_side": { "textures": [ "textures/blocks/tnt53" ] },
+    "tnt53_bottom": { "textures": [ "textures/blocks/tnt53_bottom" ] },
+	
+    "tnt54_top": { "textures": [ "textures/blocks/tnt54_top" ] },
+    "tnt54_side": { "textures": [ "textures/blocks/tnt54" ] },
+    "tnt54_bottom": { "textures": [ "textures/blocks/tnt54_bottom" ] },
+	
+    "tnt55_top": { "textures": [ "textures/blocks/tnt55_top" ] },
+    "tnt55_side": { "textures": [ "textures/blocks/tnt55" ] },
+    "tnt55_bottom": { "textures": [ "textures/blocks/tnt55_bottom" ] },
+	
+    "tnt56_top": { "textures": [ "textures/blocks/tnt56_top" ] },
+    "tnt56_side": { "textures": [ "textures/blocks/tnt56" ] },
+    "tnt56_bottom": { "textures": [ "textures/blocks/tnt56_bottom" ] },
+	
+    "tnt57_top": { "textures": [ "textures/blocks/tnt57_top" ] },
+    "tnt57_side": { "textures": [ "textures/blocks/tnt57" ] },
+    "tnt57_bottom": { "textures": [ "textures/blocks/tnt57_bottom" ] },
+	
+    "tnt58_top": { "textures": [ "textures/blocks/tnt58_top" ] },
+    "tnt58_side": { "textures": [ "textures/blocks/tnt58" ] },
+    "tnt58_bottom": { "textures": [ "textures/blocks/tnt58_bottom" ] },
+	
+    "tnt59_top": { "textures": [ "textures/blocks/tnt59_top" ] },
+    "tnt59_side": { "textures": [ "textures/blocks/tnt59" ] },
+    "tnt59_bottom": { "textures": [ "textures/blocks/tnt59_bottom" ] },
+	
+    "tnt60_top": { "textures": [ "textures/blocks/tnt60_top" ] },
+    "tnt60_side": { "textures": [ "textures/blocks/tnt60" ] },
+    "tnt60_bottom": { "textures": [ "textures/blocks/tnt60_bottom" ] },
+	
+    "tnt61_top": { "textures": [ "textures/blocks/tnt61_top" ] },
+    "tnt61_side": { "textures": [ "textures/blocks/tnt61" ] },
+    "tnt61_bottom": { "textures": [ "textures/blocks/tnt61_bottom" ] },
+	
+    "tnt62_top": { "textures": [ "textures/blocks/tnt62_top" ] },
+    "tnt62_side": { "textures": [ "textures/blocks/tnt62" ] },
+    "tnt62_bottom": { "textures": [ "textures/blocks/tnt62_bottom" ] },
+	
+    "tnt63_top": { "textures": [ "textures/blocks/tnt63_top" ] },
+    "tnt63_side": { "textures": [ "textures/blocks/tnt63" ] },
+    "tnt63_bottom": { "textures": [ "textures/blocks/tnt63_bottom" ] },
+	
+    "tnt64_top": { "textures": [ "textures/blocks/tnt64_top" ] },
+    "tnt64_side": { "textures": [ "textures/blocks/tnt64" ] },
+    "tnt64_bottom": { "textures": [ "textures/blocks/tnt64_bottom" ] },
+	
+    "tnt65_top": { "textures": [ "textures/blocks/tnt65_top" ] },
+    "tnt65_side": { "textures": [ "textures/blocks/tnt65" ] },
+    "tnt65_bottom": { "textures": [ "textures/blocks/tnt65_bottom" ] },
+	
+    "tnt66_top": { "textures": [ "textures/blocks/tnt66_top" ] },
+    "tnt66_side": { "textures": [ "textures/blocks/tnt66" ] },
+    "tnt66_bottom": { "textures": [ "textures/blocks/tnt66_bottom" ] }
+	
+  }
+}

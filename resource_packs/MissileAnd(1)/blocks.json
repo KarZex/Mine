@@ -1,0 +1,66 @@
+{
+  "format_version": [   1,  1, 0 ],
+  "zex:tnt1": {
+    "sound": "grass"
+  },
+  "zex:tnt2": {
+    "sound": "grass"
+  },
+  "zex:tnt3": {
+    "sound": "grass"
+  },
+  "zex:tnt4": {
+    "sound": "grass"
+  },
+  "zex:tnt5": {
+    "sound": "grass"
+  },
+  "zex:tnt6": {
+    "sound": "grass"
+  },
+  "zex:tnt7": {
+    "sound": "grass"
+  },
+  "zex:tnt8": {
+    "sound": "grass"
+  },
+  "zex:tnt9": {
+    "sound": "grass"
+  },
+  "zex:tnt10": {
+    "sound": "grass"
+  },
+  "zex:tnt11": {
+    "sound": "grass"
+  },
+  "zex:tnt12": {
+    "sound": "grass"
+  },
+  "zex:tnt13": {
+    "sound": "grass"
+  },
+   "zex:tnt14": {
+    "sound": "grass"
+  },
+   "zex:tnt15": {
+    "sound": "grass"
+  },
+   "zex:tnt16": {
+    "sound": "grass"
+  },
+   "zex:tnt17": {
+    "sound": "grass"
+  },
+   "zex:tnt18": {
+    "sound": "grass"
+  },
+   "zex:tnt19": {
+    "sound": "grass"
+  },
+   "zex:tnt20": {
+    "sound": "grass"
+  },
+   "zex:tnt21": {
+    "sound": "grass"
+  }
+}

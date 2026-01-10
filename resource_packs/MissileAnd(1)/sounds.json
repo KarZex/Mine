@@ -1,0 +1,516 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "stark:iceblock": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "explode": {
+            "sound": "hit.snow"
+          }
+        }
+      },
+         "addon:c1d" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c1" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c1f" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c1m" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c2c" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c2" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c2d" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c2m" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c3c" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c3f" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c3" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c3m" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c4d" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c4f" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c4c" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:c4" : {
+            "events" : {
+               "ambient" : "mob.skeleton.say",
+               "death" : "mob.skeleton.death",
+               "hurt" : {
+                  "sound" : "mob.skeleton.hurt",
+                  "volume" : 0.70
+               },
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.skeleton.step",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a1" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a2" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a3" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a4" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:f1" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:f2" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:f3" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:f4" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a1a" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a2a" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a3a" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+         "addon:a4a" : {
+            "events" : {
+               "ambient" : "mob.irongolem.say",
+               "death" : "mob.irongolem.death",
+               "hurt" : "mob.irongolem.hit",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.walk",
+                  "volume" : 1.0
+               },
+               "throw" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.irongolem.throw",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         }
+
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pal.stone": {
+			"animation_length": 0.5,
+			"bones": {
+				"bb_main": {
+					"rotation": [0, 0, 0]
+				},
+				"root": {
+					"position": [0, -10, 0]
+				},
+				"body": {
+					"rotation": [-5, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [-78.75686, -27.0478, -5.16524]
+				},
+				"rightLeg": {
+					"rotation": [-79.91547, 7.38542, 1.30962]
+				}
+			}
+		},
+		"animation.pal.sliding": {
+			"animation_length": 1.04,
+			"bones": {
+				"bb_main": {
+					"rotation": {
+						"0.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.pal.climb": {
+			"animation_length": 2,
+			"bones": {
+				"bb_main": {
+					"rotation": [0, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-15, 0, -165]
+				},
+				"rightArm": {
+					"rotation": [-15, 0, 167.5]
+				}
+			}
+		}
+	}
+}

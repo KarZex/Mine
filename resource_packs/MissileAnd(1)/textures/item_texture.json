@@ -1,0 +1,108 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+		"heavy_matter":{
+			"textures": "textures/items/heavy_matter"
+		},
+		"uranium_rod":{
+			"textures": "textures/items/uranium_rod"
+		},
+		"missile":{
+			"textures": "textures/items/m0"
+		},
+		"missile1":{
+			"textures": "textures/items/m1"
+		},
+		"missile2":{
+			"textures": "textures/items/m2"
+		},
+		"missile3":{
+			"textures": "textures/items/m3"
+		},
+		"missile4":{
+			"textures": "textures/items/m4"
+		},
+		"missile5":{
+			"textures": "textures/items/m5"
+		},
+		"missile6":{
+			"textures": "textures/items/m6"
+		},
+		"missile7":{
+			"textures": "textures/items/m7"
+		},
+		"missile8":{
+			"textures": "textures/items/m8"
+		},
+		"missile9":{
+			"textures": "textures/items/m9"
+		},
+		"missile10":{
+			"textures": "textures/items/m10"
+		},
+		"missile11":{
+			"textures": "textures/items/m11"
+		},
+		"missile12":{
+			"textures": "textures/items/m12"
+		},
+		"missile13":{
+			"textures": "textures/items/m13"
+		},
+		"missile14":{
+			"textures": "textures/items/m14"
+		},
+		"missile15":{
+			"textures": "textures/items/m15"
+		},
+		"missile16":{
+			"textures": "textures/items/m16"
+		},
+		"missile17":{
+			"textures": "textures/items/m17"
+		},
+		"missile18":{
+			"textures": "textures/items/m18"
+		},
+		"missile19":{
+			"textures": "textures/items/m19"
+		},
+		"missile20":{
+			"textures": "textures/items/m20"
+		},
+		"tnt1":{
+			"textures": "textures/items/tnt1"
+		},
+		"tnt2":{
+			"textures": "textures/items/tnt2"
+		},
+		"tnt3":{
+			"textures": "textures/items/tnt3"
+		},
+		"tnt4":{
+			"textures": "textures/items/tnt4"
+		},
+		"tnt5":{
+			"textures": "textures/items/tnt5"
+		},
+		"tnt6":{
+			"textures": "textures/items/tnt6"
+		},
+		"tnt7":{
+			"textures": "textures/items/tnt7"
+		},
+		"tnt8":{
+			"textures": "textures/items/tnt8"
+		},
+		"tnt9":{
+			"textures": "textures/items/tnt9"
+		},
+		"sw":{
+			"textures": "textures/items/sw"
+		},
+		"gun":{
+			"textures": "textures/items/gun"
+		}
+  }
+}

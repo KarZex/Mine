@@ -1,0 +1,37 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
+    "name": "§g§lMissile And TNT Addon V§c7",
+    "min_engine_version": [1, 21, 50],
+    "uuid": "5acb0934-8c8e-4ecf-83f9-bc2732eb67b6",
+    "version": [1, 21, 50]
+  },
+  "modules": [
+    {
+      "description": "Data Module",
+      "type": "data",
+      "uuid": "34077243-a92e-44e8-b9c5-f6da4c8fff65",
+      "version": [1, 0, 0]
+    },
+    {
+      "description": "Script API Module",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "4a9cceec-aeaa-4c4e-9bce-a77c3d7ccd3d",
+      "version": [1, 0, 0],
+      "entry": "scripts/missileMain.js"
+    }
+  ],
+  "capabilities": ["script_eval"],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.4.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

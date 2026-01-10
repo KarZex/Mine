@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "karzex:rock",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+        "default": "textures/stone"
+			},
+			"geometry": {
+			"default": "geometry.stone"
+			},
+			"scripts": {
+				"animate": [ 
+					"float"
+				]
+			},
+			"animations": {
+				"float": "animation.rock.stone"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}
