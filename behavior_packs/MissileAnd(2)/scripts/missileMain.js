@@ -1,292 +1,92 @@
 import { world, system, EquipmentSlot,EntityComponentTypes } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVector3 } from "./usefulFunction.js"
+import "./mining.js"
+import "./form.js"
 
-const GrapplingHookCommponent = {
-	async onUse(e,p){
-		const user = e.source;
-		const dimension = user.dimension;
-		const params = p.params;
-		const shot = params.shot_entity;
-		const power = params.power;
-		const V = user.getViewDirection();
-		const FirePos = user.getHeadLocation();
-		const shootView = {
-		  x: V.x * power,
-		  y: V.y * power,
-		  z: V.z * power 
-		}
-		const fire = dimension.spawnEntity(shot,FirePos);
-		dimension.playSound(`crossbow.shoot`,user.location)
-		fire.getComponent(`minecraft:projectile`).owner = user
-		fire.getComponent(`minecraft:projectile`).shoot( shootView );
+async function modeChange(player) {
+	const mode = player.getDynamicProperty("autobreak:currentProfileIndex");
+	const max = player.getDynamicProperty("autobreak:profile_num") +1;
+	if( player.getDynamicProperty("autobreak:mode") == undefined ){
+		player.setDynamicProperty("autobreak:mode",0);
+	}
+	let newmode = ((mode+1)%max);
+	while( player.getDynamicProperty(`autobreak:profile${newmode}_disable`) == false ){
+		newmode = ((newmode+1)%max);
+	}
+	player.setDynamicProperty("autobreak:currentProfileIndex",newmode);
+	player.setDynamicProperty("autobreak:currentProfile",player.getDynamicProperty(`autobreak:profile${newmode}`));
+	player.sendMessage(`${player.getDynamicProperty(`autobreak:profile${newmode}`)}`);
+	player.sendMessage(`${player.getDynamicProperty(`autobreak:currentProfile`)}`);
+	if( newmode == 0 ){
+		player.sendMessage("AutoBreaking Mode: §c0,Disabled");
+	}
+	else{
+		player.sendMessage(`AutoBreaking Mode: ${player.getDynamicProperty(`autobreak:profile${newmode}_name`)}`);
 	}
 }
-
-const RocketHookCommponent = {
-	async onUse(e,p){
-		const user = e.source;
-		const dimension = user.dimension;
-		const params = p.params;
-		const shot = params.shot_entity;
-		const power = params.power;
-		const V = user.getViewDirection();
-		const FirePos = user.getHeadLocation();
-		const shootView = {
-		  x: V.x * power,
-		  y: V.y * power,
-		  z: V.z * power 
-		}
-		const fire = dimension.spawnEntity(shot,FirePos);
-		dimension.playSound(`crossbow.shoot`,user.location)
-		fire.getComponent(`minecraft:projectile`).owner = user
-		fire.getComponent(`minecraft:projectile`).shoot( shootView );
-		fire.getComponent(EntityComponentTypes.Rideable).addRider(user);
-		await system.waitTicks(10);
-		fire.remove();
-
-	}
-}	
-
-system.beforeEvents.startup.subscribe( e => {
-	e.itemComponentRegistry.registerCustomComponent(`zex:grappling_hook`,GrapplingHookCommponent);
-	e.itemComponentRegistry.registerCustomComponent(`zex:rocket_hook`,RocketHookCommponent);
-})
-/*
-function missileLaunchingEvent( e ){
-	const user = e.source;
-    const dimension = user.dimension;
-	const power = 1.1;
-    const O = user.location;
-    const V = user.getViewDirection();
-    const FirePos = {
-      x: O.x,
-      y: O.y + 1.125,
-      z: O.z 
-    }
-    const shootView = {
-      x: V.x * power,
-      y: V.y * power,
-      z: V.z * power 
-    }
-    const fire = user.dimension.spawnEntity(`zex:hook_test`,FirePos);
-	dimension.playSound(`crossbow.shoot`,user.location)
-    fire.getComponent(`minecraft:projectile`).owner = user
-    fire.getComponent(`minecraft:projectile`).shoot( shootView );
-}
-function missileLaunchingEvent2( e ){
-	const user = e.source;
-    const dimension = user.dimension;
-	const power = 1.1;
-    const O = user.location;
-    const V = user.getViewDirection();
-    const FirePos = .getHeadLocation();
-    const shootView = {
-      x: V.x * power,
-      y: V.y * power,
-      z: V.z * power 
-    }
-    const fire = user.dimension.spawnEntity(`zex:hook_ender`,FirePos);
-	dimension.playSound(`crossbow.shoot`,user.location)
-    fire.getComponent(`minecraft:projectile`).owner = user
-    fire.getComponent(`minecraft:projectile`).shoot( shootView );
-}
-*/
-
-/*
-function debugLog( str ){
-	world.sendMessage( `[Pal] ${str}` );
-}
-
-async function sliding(player) {
+async function doubleSneak(player) {
 	let i = 0;
-	player.addTag("pal_sliding");
+	player.addTag("doubleSneakCheck");
 	while( true ){
-		i++;
-		await system.waitTicks(1);
-		if( !player.isSneaking ){
+		if( i <= 5 && !player.isSneaking ){
 			break;
 		}
-		else if( i > 5 ){
-			player.removeTag("pal_sliding");
-			debugLog("Sliding failed");
+		else if( i > 5 && !player.isSneaking ){
+			player.removeTag("doubleSneakCheck");
 			return false;
 		}
+		await system.waitTicks(1);
+		i++;
 	}
 	i = 0;
 	while( true ){
-		i++;
-		await system.waitTicks(1);
 		if( player.isSneaking ){
 			break;
 		}
-		else if( i > 5 ){
-			player.removeTag("pal_sliding");
-			debugLog("Sliding failed");
+		else if( i > 6 ){
+			player.removeTag("doubleSneakCheck");
 			return false;
 		}
-	}
-	const V = player.getViewDirection();
-	i = 0;
-	player.applyKnockback(V.x,V.z,3,0);
-	player.runCommand(`playanimation @s animation.pal.stone none 0 \"!query.is_on_ground\"`);
-	player.addEffect(`hunger`,20,{ amplifier:40, showParticles: true })
-	while( true ){
 		i++;
 		await system.waitTicks(1);
-		if( i < 5 ){
-			player.applyKnockback(V.x,V.z,(10-i)/5,0);
-		}
-		if( i > 10 || !player.isOnGround ){
-			player.removeTag("pal_sliding");
-			debugLog("Sliding success");
-			return true;
-		}
 	}
-	//const V = player.getViewDirection();
-	player.applyKnockback(V.x,V.z,3,0);
-	//player.addEffect(`speed`,10,{ amplifier:10, showParticles: false } );
-	await system.waitTicks(20);
-	debugLog("Sliding success");
-	player.removeTag("pal_sliding");
+	player.removeTag("doubleSneakCheck");
 	return true;
-	
 }
-
-async function afterJump(player) {
-	let i = 0;
-	player.addTag("afterJump");
-	while( true ){
-		i++;
-		await system.waitTicks(1);
-		if( !player.isJumping ){
-			break;
+system.runInterval(() => {
+	for (const player of world.getPlayers()) {
+		if( player.isSneaking && !player.hasTag("doubleSneakCheck") ){
+			doubleSneak(player).then( (result) => {
+				if( result ){
+					modeChange(player);
+				}
+			});
 		}
-		else if( player.isOnGround ){
-			player.removeTag("afterJump");
-			debugLog("afterJump failed");
-			return false;
+		else{
+			continue;
 		}
 	}
-	i = 0;
-	while( true ){
-		i++;
-		await system.waitTicks(1);
-		const V = player.getViewDirection();
-		i = 0;
-		/*
-		if( player.isJumping && isBlockUnder(player.dimension,player.location,2) == 1 ){
-			player.applyKnockback(V.x,V.z,4,-1);
-			player.runCommand(`playanimation @s animation.pal.stone none 0 \"!query.is_on_ground\"`);
-			player.addEffect(`hunger`,20,{ amplifier:40, showParticles: true })
-			player.removeTag("afterJump");
-			debugLog("afterJump success");
-			return true;
-		}
-		if( player.isSneaking ){
-			player.clearVelocity();
-			player.applyKnockback(V.x,V.z,2,0);
-			player.addEffect(`hunger`,20,{ amplifier:40, showParticles: true })
-			player.removeTag("afterJump");
-			debugLog("afterJump success");
-			return true;
-		}
-		else if( player.isOnGround || !player.hasTag("afterJump") ){
-			player.removeTag("afterJump");
-			debugLog("afterJump failed");
-			return false;
-		}
-	}
+}, 1);
 
-	
-}
-*/
 
-world.afterEvents.projectileHitEntity.subscribe( async e => {
-	const dimension = e.dimension;
-	const projectile = e.projectile;
-	const owner = e.source;
-	if( projectile.typeId == "zex:hook_test" && !projectile.hasTag(`runned`) ){
-		try{
-			projectile.addTag(`runned`);
-			const victim = e.getEntityHit().entity;
-			const dummyEntity = dimension.spawnEntity(`zex:hook_test_dummy`,victim.location);
-			dummyEntity.getComponent(EntityComponentTypes.Leashable).leashTo(owner);
-			const rideEntity = dimension.spawnEntity(`zex:hook_test_ride`,victim.location);
-			dummyEntity.getComponent(EntityComponentTypes.Rideable).addRider(rideEntity);
-			rideEntity.getComponent(EntityComponentTypes.Rideable).addRider(victim);
-			await system.waitTicks(20);
-			try{
-				projectile.remove();
-				dummyEntity.remove();
-				rideEntity.remove();
-			}catch{}
-		}catch{}
-	}
-},)
-
-world.afterEvents.projectileHitBlock.subscribe( async e => {
-	const dimension = e.dimension;
-	const projectile = e.projectile;
-	const owner = e.source;
-	if( projectile.typeId == "zex:hook_test" && !projectile.hasTag(`runned`) ){
-		if( DistanceVector3(projectile.location,owner.location) < 64 ){
-			projectile.addTag(`runned`);
-
-			const dummyEntity = dimension.spawnEntity(`zex:hook_test_dummy`,owner.location);
-			dummyEntity.getComponent(EntityComponentTypes.Leashable).leashTo(projectile);
-
-			const rideEntity = dimension.spawnEntity(`zex:hook_test_ride`,owner.location);
-			dummyEntity.getComponent(EntityComponentTypes.Rideable).addRider(rideEntity);
-			rideEntity.getComponent(EntityComponentTypes.Rideable).addRider(owner);
-			await system.waitTicks(100);
-			try{
-				owner.removeTag(`used_grappling_hook`);
-				projectile.remove();
-				dummyEntity.remove();
-				rideEntity.remove();
-			}catch{}
+world.afterEvents.worldLoad.subscribe( async e => {
+    await system.waitTicks(100);
+	const players = world.getPlayers()
+	for( const player of players ){
+		if( player.getDynamicProperty("autobreak:currentProfileIndex") == undefined ){
+			player.setDynamicProperty("autobreak:currentProfileIndex",0);
+			player.setDynamicProperty("autobreak:currentProfile",`false,1,2,2,2,2,2,2,0,0,0,false,0,0,0,0,0,0,0`);
 		}
-		
-	}
-	else if( projectile.typeId == "zex:hook_ender" && !projectile.hasTag(`runned`) ){
-		const block = e.getBlockHit().block;
-		let i = 0;
-		projectile.addTag(`runned`);
-		while( true ){
-			i++;
-			if( block.above(i).typeId == "minecraft:air" ){
-				owner.teleport( {
-					  x: block.above(i).location.x + 0.5,
-					  y: block.above(i).location.y + 0.1,
-					  z: block.above(i).location.z + 0.5
-				} );
-				break;
-			}
-			if( i > 15 ){
-				break;
-			}
+		if( player.getDynamicProperty("autobreak:profile_num") == undefined ){
+			player.setDynamicProperty("autobreak:profile_num",3);
+			player.setDynamicProperty(`autobreak:profile1_name`,`デフォルト`);
+			player.setDynamicProperty(`autobreak:profile2_name`,`整地`);
+			player.setDynamicProperty(`autobreak:profile3_name`,`ブランチマイニング`);
+			player.setDynamicProperty(`autobreak:profile1`,`true,64,8,8,8,8,8,8,0,0,0,false,0,0,0,0,0,0,0`);
+			player.setDynamicProperty(`autobreak:profile2`,`true,512,8,8,32,0,8,8,2,0,0,true,6,6,0,0,6,6,8`);
+			player.setDynamicProperty(`autobreak:profile3`,`true,64,0,0,0,1,32,0,2,0,0,true,0,0,0,0,16,0,8`);
+			
 		}
-		await system.waitTicks(1);
-		dimension.playSound(`mob.endermen.portal`,owner.location);
-		projectile.remove()
-	}
-	else if( projectile.typeId == "zex:hook_knockback" && !projectile.hasTag(`runned`) ){
-		const block = e.getBlockHit().block;
-		projectile.addTag(`runned`);
-		dimension.playSound(`crossbow.loading.middle`,owner.location)
-		const location = block.location;
-		const O = owner.location;
-		owner.addEffect(`slow_falling`,10)
-		
-		owner.applyKnockback(
-			{
-				x:Vector3Sub(O,location).x,
-				z:Vector3Sub(O,location).z
-			},
-			(location.y - O.y)/4
-		)
-		await system.waitTicks(1);
-		projectile.remove()
 	}
 } )

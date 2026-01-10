@@ -1,0 +1,6 @@
+EnableB,MAXBlocksize,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,itemDropignore,Tree,crops,placing,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,torch
+false,1,2,2,2,2,2,2,0,0,0,false,0,0,0,0,0,0,0
+true,64,8,8,8,8,8,8,0,0,0,false,0,0,0,0,0,0,0
+true,512,8,8,32,0,8,8,2,0,0,true,6,6,0,0,6,6,8
+true,64,0,0,0,1,32,0,2,0,0,true,0,0,0,0,16,0,8
+
