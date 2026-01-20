@@ -2,23 +2,23 @@
   "format_version": 2,
   "header": {
     "description": "§gCreate By KarZex-Kimekun920 \nPlease Subs My channel!!",
-    "name": "§g§lMissile And TNT Addon V§c7",
-    "min_engine_version": [1, 21, 50],
-    "uuid": "5acb0934-8c8e-4ecf-83f9-bc2732eb67b6",
-    "version": [1, 21, 50]
+    "name": "一括破壊アドオン V0.1",
+    "min_engine_version": [1, 21, 130],
+    "uuid": "3bfc4594-c205-4cf6-9bcd-0c423a6f634b",
+    "version": [1, 21, 130]
   },
   "modules": [
     {
       "description": "Data Module",
       "type": "data",
-      "uuid": "34077243-a92e-44e8-b9c5-f6da4c8fff65",
+      "uuid": "9a4a8a91-390e-4e38-a6fc-cbb5aea7c816",
       "version": [1, 0, 0]
     },
     {
       "description": "Script API Module",
       "language": "javascript",
       "type": "script",
-      "uuid": "4a9cceec-aeaa-4c4e-9bce-a77c3d7ccd3d",
+      "uuid": "b9ca89bb-3719-40b6-8c67-7c95aa5fcef0",
       "version": [1, 0, 0],
       "entry": "scripts/missileMain.js"
     }

@@ -3,6 +3,16 @@ import { world, system, Entity,ItemComponentTypes,EntityComponentTypes,Equipment
 
 //world.getEntity(`a`).getVelocity()
 
+export function getInventoryItem(player,typeId){
+	let c = 0
+	for(let j = 0; j < 36; j++){
+		let Haditem = player.getComponent("inventory").container.getItem(j);
+		if( Haditem != undefined && Haditem.typeId == typeId ){
+			c += player.getComponent("inventory").container.getItem(j).amount;
+		}
+	}
+	return c;
+}
 export function absVector3( V ){
     let abs_x = V.x * V.x;
     let abs_y = V.y * V.y;

@@ -4,9 +4,7 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "tnt1_top": { "textures": [ "textures/blocks/tnt1_top" ] },
-    "tnt1_side": { "textures": [ "textures/blocks/tnt1" ] },
-    "tnt1_bottom": { "textures": [ "textures/blocks/tnt1_bottom" ] },
+    "block_isnt_drop": { "textures": [ "textures/blocks/block_isnt_drop" ] },
 	
     "tnt2_top": { "textures": [ "textures/blocks/tnt2_top" ] },
     "tnt2_side": { "textures": [ "textures/blocks/tnt2" ] },
