@@ -53,7 +53,7 @@ function setDistance( player,forward,back,left,right ){
 	if( -45 < player.getRotation().y && player.getRotation().y < 45  ){
 		//south z+
 		//west,east,north,south
-		return [ left,right,back,forward,0 ];
+		return [ right,left,back,forward,0 ];
 	}
 	else if( 45 < player.getRotation().y && player.getRotation().y < 135  ){
 		//west x-
@@ -63,7 +63,7 @@ function setDistance( player,forward,back,left,right ){
 	else if( -135 > player.getRotation().y || player.getRotation().y > 135  ){
 		//north z-
 		//west,east,north,south
-		return [ right,left,forward,back,180 ];
+		return [ left,right,forward,back,180 ];
 	}
 	else if( -135 < player.getRotation().y && player.getRotation().y < -45  ){
 		//east x+
@@ -149,7 +149,7 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 	const breakIds = breakBlockAnotherId(blockId,targetBlockId);
 	//world.sendMessage(`${Boolean(profile[13])}`);
 	const blockTags = dim.getBlock(location).getTags();
-	if( ( Number(profile[13]) == 0 && !breakIds ) || NoBreakBlocks.includes(targetBlockId) ){  return; }
+	if( ( Number(profile[11]) == 0 && !breakIds ) || NoBreakBlocks.includes(targetBlockId) ){  return; }
 	if( player.getDynamicProperty(`autobreak:brokenBlocks`) >= Number(profile[1]) ){ return; }
 	if( world.getDynamicProperty(`autobreak:use_tool`) && !blockDestroyTool(item,dim.getBlock(location)) ){ return; }
 	//world.sendMessage(`${location.x},${location.y},${location.z},xz${getorigin2( O,location,view,Number(profile[0]) )},MIN${O.y - Number(profile[5]) + getorigin2( O,location,view,Number(profile[0]) )},MAX${O.y + Number(profile[4]) + getorigin2( O,location,view,Number(profile[0]) )}`)
@@ -163,7 +163,7 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 	){ return; }
 	if( !damageing(player) ){ return; }
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
-	if( profile[8] == 0 || ( profile[8] == 1 && getBlockIsntDrop(player,Number(profile[12]),targetBlockId) )  ){
+	if( profile[8] == 0 || ( getBlockIsntDrop(player,Number(profile[8]),targetBlockId) )  ){
 		player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${location.x} ${location.y} ${location.z} mainhand`);
 	}
 	player.setDynamicProperty(`autobreak:brokenBlocks`,player.getDynamicProperty(`autobreak:brokenBlocks`)+1);
@@ -204,7 +204,7 @@ world.beforeEvents.playerBreakBlock.subscribe( async ev => {
 		const origBlock = ev.block.location;
 		let item = undefined;
 		let profileId = player.getDynamicProperty("autobreak:currentProfileIndex");
-		world.sendMessage(`Blocktags:${ev.block.getTags()}`)
+		//world.sendMessage(`Blocktags:${ev.block.getTags()}`)
 		/*
 		try{
 			const gun = player.getComponent(EntityComponentTypes.Equippable).getEquipmentSlot(EquipmentSlot.Mainhand);

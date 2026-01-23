@@ -21,7 +21,7 @@ function setDistance( player,forward,back,left,right ){
 	if( -45 < player.getRotation().y && player.getRotation().y < 45  ){
 		//south z+
 		//west,east,north,south
-		return [ left,right,back,forward,0 ];
+		return [ right,left,back,forward,0 ];
 	}
 	else if( 45 < player.getRotation().y && player.getRotation().y < 135  ){
 		//west x-
@@ -31,7 +31,7 @@ function setDistance( player,forward,back,left,right ){
 	else if( -135 > player.getRotation().y || player.getRotation().y > 135  ){
 		//north z-
 		//west,east,north,south
-		return [ right,left,forward,back,180 ];
+		return [ left,right,forward,back,180 ];
 	}
 	else if( -135 < player.getRotation().y && player.getRotation().y < -45  ){
 		//east x+
@@ -78,7 +78,7 @@ function getBreakingDown( O,P,view ){
 	}
 }
 
-function profileUporDown( profile0 ){
+function profileUporDown( profile0 ){  
 	if( profile0 == 1 ){
 		return 0;
 	}
@@ -142,13 +142,14 @@ function damageing(player){
 	}
 }
 
-async function placingBlock(player,blockId,location,view,profile){
+async function placingBlock(player,blockId,location,view,profile,states){
 	//world.sendMessage(`${Number(profile[1])}`)
 	const dim = world.getDimension(player.dimension.id);
 	//world.sendMessage(`${blockId} vs ${dim.getBlock(location).typeId}`);
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
 	const targetBlockId = dim.getBlock(location).typeId;
 	const O = player.getDynamicProperty(`autobreak:origBlock`);
+	const d = Number(profile[9]);
 	//world.sendMessage(`${dim.getBlock(location).below(1).typeId}`);
 	//world.sendMessage(`${profile} ${Number(profile[8])}`)
 	if( !PlaceableBlocks.includes(targetBlockId) ){ return; }
@@ -169,14 +170,15 @@ async function placingBlock(player,blockId,location,view,profile){
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
 	player.setDynamicProperty(`autobreak:placedBlocks`,player.getDynamicProperty(`autobreak:placedBlocks`)+1);
 	dim.setBlockType(location, blockId);
+	dim.setBlockPermutation(location,states);
 	await system.waitTicks(1);
 	//world.sendMessage(`${location.x},${location.y},${location.z}`);
 	//dim.setBlockType({x:location.x+2,y:location.y,z:location.z}, "minecraft:emerald_block");
 	for( let i = -1; i < 2; i++ ){
 		for( let j = -1; j < 2; j++ ){
 			for( let k = -1; k < 2; k++ ){
-				const P = {x:location.x+i,y:location.y+j,z:location.z+k};
-				placingBlock(player,blockId,P,view,profile);
+				const P = {x:location.x+i*(1+d),y:location.y+j*(1+d),z:location.z+k*(1+d)};
+				placingBlock(player,blockId,P,view,profile,states);
 				//dim.setBlockType({x:P.x+1,y:P.y,z:P.z}, "minecraft:bedrock");
 				//world.sendMessage(`${P.x},${P.y},${P.z},,${location.y+j},,${getorigin2( O,location,view,Number(profile[0]) )}`)
 				/*
@@ -215,6 +217,9 @@ world.afterEvents.playerPlaceBlock.subscribe( async ev => {
 
 		}catch{  return false; }
 		if( Number(profile[0]) > 0 ){
+			const states = ev.block.permutation;
+			const d = Number(profile[9]);
+			//world.sendMessage(`[${Object.keys(a)}],[${Object.values(a)}]`);
 			player.setDynamicProperty(`autobreak:placedBlocks`,1);
 			player.setDynamicProperty(`autobreak:origBlock`,origBlock);
 			//world.sendMessage(`${player.getRotation().y}`);
@@ -224,9 +229,9 @@ world.afterEvents.playerPlaceBlock.subscribe( async ev => {
 				for( let i = -1; i < 2; i++ ){
 					for( let j = -1; j < 2; j++ ){
 						for( let k = -1; k < 2; k++ ){
-							const P = {x:location.x+i,y:location.y+j,z:location.z+k};
+							const P = {x:location.x+i*(1+d),y:location.y+j*(1+d),z:location.z+k*(1+d)};
 							//player.dimension.setBlockType({x:P.x+1,y:P.y,z:P.z}, "minecraft:bedrock");
-							placingBlock(player,blockId,P,view,profile);
+							placingBlock(player,blockId,P,view,profile,states);
 							//world.sendMessage(`${P.x},${P.y},${P.z},,${location.y+j},,${getorigin2( O,location,view,Number(profile[0]) )}`)
 						}
 					}

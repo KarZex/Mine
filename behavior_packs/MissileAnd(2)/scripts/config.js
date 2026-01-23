@@ -17,6 +17,9 @@ export const DEDUCE_DURABILITY = true;
 //Restricting block destruction by tools
 export const TOOL_SETTING = true;
 
+//各方向の最大距離設定
+//Maximum distance settings in each direction
+export const DirectionBlock = 64;
 //作物の設定
 //Crop Settings
 export const breakableCrops = [
@@ -61,10 +64,15 @@ export const defaultPlaceProfile = [
     //Like CSV
     //EnableB,MAXBlocksize,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,itemDropignore,Tree,Ore,crops,placing,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,torch
     `0,1,2,2,2,2,2,2,0,0,0,0,0,0,0,0`, //§c無効
-    `1,64,8,8,8,8,8,8,0,0,1,0,0,0,0,0` //§aデフォルト
+    `1,64,8,0,8,0,8,0,0,0,1,0,0,0,0,0`, //§aデフォルト(右前)
+    `1,1024,32,32,32,32,32,32,1,0,1,0,0,0,0,0`, //§b湧きつぶし
+    `1,64,0,0,0,0,32,0,0,0,1,0,0,0,0,0`, //§e橋
+    `2,64,0,0,0,0,32,0,0,0,1,0,0,0,0,0`, //§d階段下り
+    `3,64,0,0,0,0,32,0,0,0,1,0,0,0,0,0`, //§3階段上り
+    `1,128,8,8,0,0,8,8,0,0,1,0,0,0,0,0` //§6整地
 ]
 
-export const defaultPlaceProfileDisable = [ true,true ];
+export const defaultPlaceProfileDisable = [ true,true,false,false,false,false ];
 
 export const defaultProfileDisable = [ true,true,false,false,false,false,false ];
 
@@ -73,6 +81,11 @@ export const defaultBlockIsntDrop = [
     //<block id>;<block id>; ...
     ``,
     `minecraft:stone;minecraft:dirt;minecraft:grass;minecraft:sand;minecraft:gravel;minecraft:leaves;minecraft:deepslate;minecraft:sandstone;minecraft:netherrack;minecraft:soul_sand;minecraft:soul_soil;minecraft:snow;`
+]
+
+export const defaultBlockIsntDropName = [
+    ``,
+    `tile.stone.stone.name;tile.dirt.default.name;tile.sand.default.name;tile.gravel.name;tile.deepslate.name;tile.sandstone.name;tile.netherrack.name;tile.soul_soil.name;tile.soul_sand.name;tile.snow.name;tile.grass.name;tile.snow_layer.name;`
 ]
 
 //一括破壊できないアイテム
@@ -131,7 +144,7 @@ export const NoBreakBlocks = [
 ]
 
 export const PlaceableBlocks = [
-    `minecraft:activator_rail`,
+    //`minecraft:activator_rail`,
     `minecraft:air`,
     `minecraft:allium`,
     `minecraft:azure_bluet`,
@@ -150,7 +163,7 @@ export const PlaceableBlocks = [
     `minecraft:dead_bush`,
     `minecraft:dead_coral`,
     `minecraft:dead_coral_fan`,
-    `minecraft:detector_rail`,
+    //`minecraft:detector_rail`,
     `minecraft:end_gateway`,
     `minecraft:end_portal`,
     `minecraft:eyeblossom`,
@@ -188,10 +201,10 @@ export const PlaceableBlocks = [
     `minecraft:polished_blackstone_pressure_plate`,
     `minecraft:poppy`,
     `minecraft:powder_snow`,
-    `minecraft:powered_rail`,
-    `minecraft:rail`,
+    //`minecraft:powered_rail`,
+    //`minecraft:rail`,
     `minecraft:red_mushroom`,
-    `minecraft:redstone_torch`,
+    ///`minecraft:redstone_torch`,
     `minecraft:redstone_wire`,
     `minecraft:rose_bush`,
     `minecraft:sapling`,
@@ -203,7 +216,7 @@ export const PlaceableBlocks = [
     `minecraft:small_dripleaf`,
     `minecraft:snow`,
     `minecraft:soul_fire`,
-    `minecraft:soul_torch`,
+    //`minecraft:soul_torch`,
     `minecraft:spore_blossom`,
     `minecraft:stone_button`,
     `minecraft:stone_pressure_plate`,
@@ -213,12 +226,12 @@ export const PlaceableBlocks = [
     `minecraft:sunflower`,
     `minecraft:tall_dry_grass`,
     `minecraft:tall_grass`,
-    `minecraft:torch`,
+    //`minecraft:torch`,
     `minecraft:torchflower`,
     `minecraft:tripwire_hook`,
     `minecraft:tulip`,
     `minecraft:twisting_vines`,
-    `minecraft:underwater_torch`,
+    //`minecraft:underwater_torch`,
     `minecraft:vines`,
     `minecraft:warped_fungus`,
     `minecraft:warped_roots`,
