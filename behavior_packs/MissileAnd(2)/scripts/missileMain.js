@@ -152,7 +152,7 @@ export function getBlockTexts( blockIds ){
 
 system.runInterval(() => {
 	for (const player of world.getPlayers()) {
-		if( player.isSneaking && !player.hasTag("doubleSneakCheck") ){
+		if( player.isSneaking && player.getDynamicProperty(`autobreak:sneak_notice`) ){
 			const item = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand);
 			let haditem = false;
 			try{
@@ -255,6 +255,13 @@ const AutoMiningSettingCommponent = {
 	}
 }
 
+const AutoMiningAdminSettingCommponent = {
+	async onUse(e,p){
+		const user = e.source;
+		user.runCommand(`scriptevent autobreak:admin`);
+	}
+}
+
 const BlockIsntDropCommponent = {
 	async onPlayerInteract(e,p){
 		const user = e.player;
@@ -344,5 +351,6 @@ const BlockIsntDropCommponent = {
 
 system.beforeEvents.startup.subscribe( e => {
 	e.itemComponentRegistry.registerCustomComponent(`zex:setting`,AutoMiningSettingCommponent);
+	e.itemComponentRegistry.registerCustomComponent(`zex:admin_setting`,AutoMiningAdminSettingCommponent);
 	e.blockComponentRegistry.registerCustomComponent(`zex:block_isnt_drop`,BlockIsntDropCommponent);
 })

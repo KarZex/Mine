@@ -1,0 +1,49 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "zex:admin_setting_recipe"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABC",
+      "DEF",
+      "GHI"
+    ],
+    "key": {
+    //you cant create bedrock item in survival mode so i use these items as placeholder
+      "A": {
+        "item": "minecraft:bedrock"
+      },
+      "B": {
+        "item": "minecraft:barrier"
+      },
+      "C": {
+        "item": "minecraft:command_block"
+      },
+      "D": {
+        "item": "minecraft:end_gateway"
+      },
+      "E": {
+        "item": "minecraft:netherreactor"
+      },
+      "F": {
+        "item": "minecraft:end_portal"
+      },
+      "G": {
+        "item": "minecraft:portal"
+      },
+      "H": {
+        "item": "minecraft:stonecutter"
+      },
+      "I": {
+        "item": "minecraft:structure_block"
+      }
+    },
+    "result": {
+      "item": "zex:admin_setting",
+      "count": 1
+    }
+  }
+  
+}

@@ -4,17 +4,57 @@ import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVe
 import { defaultProfile, defaultProfileDisable, defaultBlockIsntDrop,TOOL_SETTING, DEDUCE_DURABILITY,MAX_BLOCKS ,defaultPlaceProfile,defaultPlaceProfileDisable,defaultBlockIsntDropName,DirectionBlock } from "./config.js"
 import { getBlockTexts } from "./missileMain.js"
 system.afterEvents.scriptEventReceive.subscribe( e => {
+	if( e.id == `autobreak:admin` ){
+		const user = e.sourceEntity;
+		const form2 = new ModalFormData();
+		form2.title(`script.autobreak.admin.name`);
+		form2.toggle(`script.autobreak.use_item.name`, {defaultValue: world.getDynamicProperty(`autobreak:use_item`)});
+		form2.toggle(`script.autobreak.use_tool.name`, {defaultValue: world.getDynamicProperty(`autobreak:use_tool`)});
+		form2.slider({ translate: `script.autobreak.max_block.name` },1,MAX_BLOCKS, {defaultValue: world.getDynamicProperty(`autobreak:maxBlock`)});
+		form2.show(user).then( r2 => {
+			if (!r2.canceled) {
+				if( world.getDynamicProperty(`autobreak:use_item`) != Boolean(r2.formValues[0]) ){
+					world.setDynamicProperty(`autobreak:use_item`,Boolean(r2.formValues[0]));
+					world.sendMessage(`Use Item is now ${r2.formValues[0]}`);
+				}
+				if( world.getDynamicProperty(`autobreak:use_tool`) != Boolean(r2.formValues[1]) ){
+					world.setDynamicProperty(`autobreak:use_tool`,Boolean(r2.formValues[1]));
+					world.sendMessage(`Use Tool is now ${r2.formValues[1]}`);
+				}
+				if( world.getDynamicProperty(`autobreak:maxBlock`) != Number(r2.formValues[2]) ){
+					world.setDynamicProperty(`autobreak:maxBlock`,Number(r2.formValues[2]));
+					world.sendMessage(`Max Block is now ${r2.formValues[2]}`);
+				}
+				
+			}
+		});
+	}
 	if( e.id == `autobreak:main` ){
 		const user = e.sourceEntity;
 		const form = new ActionFormData();
-		form.title(`Setting`);
+		form.title(`script.autobreak.setting.name`);
 		form.button(`script.autobreak.myinfo.name`);
 		form.button(`script.autobreak.break_profile.name`);
 		form.button(`script.autobreak.place_profile.name`);
 		form.show(user).then( r => {
 			if (!r.canceled) {
 				if( r.selection == 0 ){
+					const form2 = new ModalFormData();
+					form2.title(`script.autobreak.myinfo.name`);
+					form2.toggle(`script.autobreak.sneak_notice.name`, {defaultValue: user.getDynamicProperty(`autobreak:sneak_notice`)});
+					form2.toggle(`script.autobreak.setting_reset.name`, {defaultValue: false});
 
+					form2.show(user).then( r2 => {
+						if (!r2.canceled) {
+							if( user.getDynamicProperty(`autobreak:sneak_notice`) != Boolean(r2.formValues[0]) ){
+								user.setDynamicProperty(`autobreak:sneak_notice`,Boolean(r2.formValues[0]));
+								user.sendMessage(`Sneak Notice is now ${r2.formValues[0]}`);
+							}
+							if( r2.formValues[1] == true ){
+								user.removeTag(`automining2`);
+							}
+						}
+					});
 				}
 				else if( r.selection == 1 ){
 					user.runCommand(`scriptevent autobreak:phone_break_profile`);
@@ -94,10 +134,10 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 		const user = e.sourceEntity;
 		const form2 = new ActionFormData();
 		form2.title(`script.autobreak.break_profile.name`);
+		form2.body(`script.autobreak.break_profile_tooltip.name`);
 		form2.button(`script.autobreak.profile_enable.name`);
 		form2.button(`script.autobreak.profile_list.name`);
-		form2.button(`script.autobreak.add_profile.name`);
-		form2.button(`script.autobreak.remove_profile.name`);
+		form2.button(`script.autobreak.drop_profile.name`);
 		form2.show(user).then( r2 => {
 			if (!r2.canceled) {
 				if( r2.selection == 0 ){
@@ -217,7 +257,7 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 		const form3 = new ActionFormData();
 		form3.title(`script.autobreak.break_drop_setting.name`);
 		form3.body(`script.autobreak.break_drop_setting_tooltip.name`);
-		world.sendMessage(`${user.getDynamicProperty(`autobreak:blockIsntDrop1`)}`)
+		//world.sendMessage(`${user.getDynamicProperty(`autobreak:blockIsntDrop1`)}`)
 		for( let i = 0; user.getDynamicProperty(`autobreak:blockIsntDrop${i}`) != undefined ; i++ ){
 			form3.button({ rawtext: getBlockTexts(user.getDynamicProperty(`autobreak:blockIsntDrop${i}_name`)) });
 		}
@@ -227,6 +267,8 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				const blocks = String(user.getDynamicProperty(`autobreak:blockIsntDrop${r3.selection}`)).split(`;`);
 				const blocks2 = String(user.getDynamicProperty(`autobreak:blockIsntDrop${r3.selection}_name`)).split(`;`);
 				let message = [];
+				form4.button(`script.autobreak.profile_remove.name`);
+				form4.button(`script.autobreak.profile_pack.name`);
 				for( const block of blocks ){
 					message.push({ text: `id:${block} `});
 					message.push({ text: `name:` });
@@ -235,7 +277,18 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				}
 				form4.body({ rawtext: message });
 				form4.show(user).then( r4 => {
-					user.runCommand(`scriptevent autobreak:phone_break_drop_setting`);
+					if (!r4.canceled) {
+						if( r4.selection == 0 ){
+							//remove
+							user.setDynamicProperty(`autobreak:blockIsntDrop${r3.selection}`,undefined);
+							user.setDynamicProperty(`autobreak:blockIsntDrop${r3.selection}_name`,undefined);
+							user.runCommand(`scriptevent autobreak:phone_break_drop_setting`);
+						}
+						else if( r4.selection == 1 ){
+
+							user.runCommand(`scriptevent autobreak:phone_break_drop_setting`);
+						}
+					}
 				})
 			}
 
@@ -246,10 +299,11 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 		const user = e.sourceEntity;
 		const form2 = new ActionFormData();
 		form2.title(`script.autobreak.place_profile.name`);
+		form2.body(`script.autobreak.place_profile_tooltip.name`);
 		form2.button(`script.autobreak.profile_enable.name`);
 		form2.button(`script.autobreak.profile_list.name`);
-		form2.button(`script.autobreak.add_profile.name`);
-		form2.button(`script.autobreak.remove_profile.name`);
+		//form2.button(`script.autobreak.add_profile.name`);
+		//form2.button(`script.autobreak.remove_profile.name`);
 		form2.show(user).then( r2 => {
 			if (!r2.canceled) {
 				if( r2.selection == 0 ){
@@ -257,12 +311,6 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				}
 				else if( r2.selection == 1 ){
 					user.runCommand(`scriptevent autobreak:phone_place_profile_list`);
-				}
-				else if( r2.selection == 2 ){
-					user.runCommand(`scriptevent autobreak:phone_place_profile_enable`);
-				}
-				else if( r2.selection == 3 ){
-					user.runCommand(`scriptevent autobreak:phone_place_profile_enable`);
 				}
 			}
 		} )
@@ -329,7 +377,7 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				form4.dropdown(`script.autobreak.get_block_isnt_drop.name`,blockIsntDrops, {defaultValueIndex: Number(profile[12]),tooltip:`script.autobreak.get_block_isnt_drop_tooltip.name`});
 				form4.dropdown(`script.autobreak.consider_block.name`,[`script.autobreak.no.name`,`script.autobreak.yes.name`],{defaultValueIndex: Number(profile[13]),tooltip:`script.autobreak.consider_block_tooltip.name`});
 				*/
-				form4.slider(`script.autobreak.block_d.name`,0,DirectionBlock, {defaultValue: Number(profile[9]),tooltip:`script.autobreak.block_d_tooltip.name`});
+				form4.slider({translate:`script.autobreak.block_d.name`},0,DirectionBlock, {defaultValue: Number(profile[9]),tooltip:`script.autobreak.block_d_tooltip.name`});
 				//form4.slider(`script.autobreak.block_size_down.name`,0,32, {defaultValue: Number(profile[15]),tooltip:`script.autobreak.block_size_tooltip.name`});
 				form4.show(user).then( r4 => {
 					if (!r4.canceled) {
@@ -417,6 +465,8 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 		player.setDynamicProperty(`autobreak:place_profile_num`,P - 1 - d);
 		player.setDynamicProperty("autobreak:place_currentProfileIndex",1);
 		player.setDynamicProperty("autobreak:place_currentProfile",defaultPlaceProfile[1]);
+
+		player.setDynamicProperty(`autobreak:sneak_notice`,true);
 
 		player.runCommand(`give @s zex:setting`)
 		world.setDynamicProperty(`autobreak:breakCountsTick`,0);

@@ -5,6 +5,9 @@
 		"setting":{
 			"textures": "textures/items/setting"
 		},
+		"admin_setting":{
+			"textures": "textures/items/admin_setting"
+		},
 		"allowdipo":{
 			"textures": "textures/items/allowdipo"
 		}

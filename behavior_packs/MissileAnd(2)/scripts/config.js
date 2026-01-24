@@ -53,18 +53,18 @@ export const defaultProfile = [
     //EnableB,MAXBlocksize,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,itemDropignore,Tree,Ore,crops,placing,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,torch
     `0,1,2,2,2,2,2,2,0,0,0,0,0,0,0,0`, //§c無効
     `1,64,8,8,8,8,8,8,0,0,1,0,0,0,0,0`, //§aデフォルト
-    `1,64,1,1,1,1,1,1,0,0,0,0,0,1,0,0`, //§b範囲破壊
-    `1,512,8,8,32,0,8,8,1,0,0,0,1,1,0,0`, //§9整地
-    `1,64,0,0,1,0,32,0,1,0,0,0,1,1,0,0`, //§eブランチマイニング
-    `2,256,1,1,3,0,32,0,1,0,0,0,1,1,0,0`, //§d階段下り
-    `3,256,1,1,3,0,32,0,1,0,0,0,1,1,0,0` //§3階段上り
+    `1,64,1,1,1,1,1,1,0,0,0,0,1,1,0,0`, //§b範囲破壊
+    `1,512,8,8,32,0,8,8,1,0,0,1,1,1,0,0`, //§9整地
+    `1,64,0,0,1,0,32,0,1,0,0,1,1,1,0,0`, //§eブランチマイニング
+    `2,256,1,1,3,0,32,0,1,0,1,1,1,1,0,0`, //§d階段下り
+    `3,256,1,1,3,0,32,0,1,0,1,1,1,1,0,0` //§3階段上り
 ]
 
 export const defaultPlaceProfile = [
     //Like CSV
     //EnableB,MAXBlocksize,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,itemDropignore,Tree,Ore,crops,placing,BlockSizeRight,BlockSizeLeft,blockSizeUP,BlockSizeDOWN,BlockSizeFoward,BlockSizeBack,torch
     `0,1,2,2,2,2,2,2,0,0,0,0,0,0,0,0`, //§c無効
-    `1,64,8,0,8,0,8,0,0,0,1,0,0,0,0,0`, //§aデフォルト(右前)
+    `1,64,4,0,4,0,4,0,0,0,1,0,0,0,0,0`, //§aデフォルト(右前)
     `1,1024,32,32,32,32,32,32,1,0,1,0,0,0,0,0`, //§b湧きつぶし
     `1,64,0,0,0,0,32,0,0,0,1,0,0,0,0,0`, //§e橋
     `2,64,0,0,0,0,32,0,0,0,1,0,0,0,0,0`, //§d階段下り
@@ -244,8 +244,8 @@ export const PlaceableBlocks = [
 
 //define log,leaves, etc. block types
 
-export function breakBlockAnotherId(blockId,targetId){
-    if( blockId.includes("leaves") || blockId.includes("log") ){
+export function breakBlockAnotherId(blockId,targetId,is_9_enabled){
+    if( is_9_enabled && ( blockId.includes("leaves") || blockId.includes("log") ) ){
         if( targetId.includes("leaves") || targetId.includes("log") ){
             return true;
         }
@@ -255,6 +255,14 @@ export function breakBlockAnotherId(blockId,targetId){
     }
     else if( blockId.includes("stem") || blockId.includes("wart_block") ){
         if( targetId.includes("stem") || targetId.includes("wart_block") ){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    else if( blockId.includes("redstone_ore") || blockId.includes("lit_redstone_ore") ){
+        if( targetId.includes("redstone_ore") || targetId.includes("lit_redstone_ore") ){
             return true;
         }
         else{

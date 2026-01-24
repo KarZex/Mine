@@ -145,8 +145,8 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
 	const targetBlockId = dim.getBlock(location).typeId;
 	const O = player.getDynamicProperty(`autobreak:origBlock`);
-	
-	const breakIds = breakBlockAnotherId(blockId,targetBlockId);
+	//world.sendMessage(`${Boolean((profile[9]) == `0`)}`)
+	const breakIds = breakBlockAnotherId(blockId,targetBlockId,Boolean((profile[9]) == `0`));
 	//world.sendMessage(`${Boolean(profile[13])}`);
 	const blockTags = dim.getBlock(location).getTags();
 	if( ( Number(profile[11]) == 0 && !breakIds ) || NoBreakBlocks.includes(targetBlockId) ){  return; }
