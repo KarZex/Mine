@@ -56,8 +56,8 @@ export const defaultProfile = [
     `1,64,1,1,1,1,1,1,0,0,0,0,1,1,0,0`, //§b範囲破壊
     `1,512,8,8,32,0,8,8,1,0,0,1,1,1,0,0`, //§9整地
     `1,64,0,0,1,0,32,0,1,0,0,1,1,1,0,0`, //§eブランチマイニング
-    `2,256,1,1,3,0,32,0,1,0,1,1,1,1,0,0`, //§d階段下り
-    `3,256,1,1,3,0,32,0,1,0,1,1,1,1,0,0` //§3階段上り
+    `2,256,0,0,3,0,32,0,1,0,1,1,1,1,0,0`, //§d階段下り
+    `3,256,0,0,3,0,32,0,1,0,1,1,1,1,0,0` //§3階段上り
 ]
 
 export const defaultPlaceProfile = [
@@ -80,7 +80,7 @@ export const defaultBlockIsntDrop = [
     //split ";"
     //<block id>;<block id>; ...
     ``,
-    `minecraft:stone;minecraft:dirt;minecraft:grass;minecraft:sand;minecraft:gravel;minecraft:leaves;minecraft:deepslate;minecraft:sandstone;minecraft:netherrack;minecraft:soul_sand;minecraft:soul_soil;minecraft:snow;`
+    `minecraft:stone;minecraft:dirt;minecraft:grass_block;minecraft:sand;minecraft:gravel;minecraft:leaves;minecraft:deepslate;minecraft:sandstone;minecraft:netherrack;minecraft:soul_sand;minecraft:soul_soil;minecraft:snow;`
 ]
 
 export const defaultBlockIsntDropName = [

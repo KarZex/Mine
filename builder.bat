@@ -12,8 +12,8 @@ cd ..
 python builder.py
 "C:\Program Files\7-Zip\7z.exe" a -tzip ./output/AutoMiningB.zip .\behavior_packs\AutoMining
 "C:\Program Files\7-Zip\7z.exe" a -tzip ./output/AutoMiningR.zip .\resource_packs\AutoMining
-rename output\AutoMiningB.zip AutoMiningB.mcpack
-rename output\AutoMiningR.zip AutoMiningR.mcpack
+rename output\AutoMiningB.zip Usefull_Addon_B.mcpack
+rename output\AutoMiningR.zip Usefull_Addon_R.mcpack
 rd /S /Q behavior_packs\AutoMining
 rd /S /Q resource_packs\AutoMining
 del output\AutoMiningB.zip

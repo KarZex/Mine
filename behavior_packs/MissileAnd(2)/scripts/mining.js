@@ -163,7 +163,7 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 	){ return; }
 	if( !damageing(player) ){ return; }
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
-	if( profile[8] == 0 || ( getBlockIsntDrop(player,Number(profile[8]),targetBlockId) )  ){
+	if( Number(profile[8]) == 0 || ( getBlockIsntDrop(player,Number(profile[8]),targetBlockId) )  ){
 		player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${location.x} ${location.y} ${location.z} mainhand`);
 	}
 	player.setDynamicProperty(`autobreak:brokenBlocks`,player.getDynamicProperty(`autobreak:brokenBlocks`)+1);

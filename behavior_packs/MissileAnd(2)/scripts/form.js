@@ -215,7 +215,7 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				form4.slider({ translate: `script.autobreak.block_size_down.name` },0,DirectionBlock, {defaultValue: Number(profile[5]),tooltip:`script.autobreak.block_size_tooltip.name`});
 				form4.slider({ translate: `script.autobreak.block_size_forward.name` },0,DirectionBlock, {defaultValue: Number(profile[6]),tooltip:`script.autobreak.block_size_tooltip.name`});
 				form4.slider({ translate: `script.autobreak.block_size_back.name` },0,DirectionBlock, {defaultValue: Number(profile[7]),tooltip:`script.autobreak.block_size_tooltip.name`});
-				form4.dropdown(`script.autobreak.item_drop_ignore.name`,blockIsntDrops,{defaultValue: Number(profile[8]),tooltip:`script.autobreak.item_drop_ignore_tooltip.name`});
+				form4.dropdown(`script.autobreak.item_drop_ignore.name`,blockIsntDrops,{defaultValueIndex: Number(profile[8]),tooltip:`script.autobreak.item_drop_ignore_tooltip.name`});
 				form4.dropdown(`script.autobreak.tree.name`,[`script.autobreak.leaves_log.name`,`script.autobreak.log_only.name`],{defaultValueIndex: Number(profile[9]),tooltip:`script.autobreak.tree_tooltip.name`});
 				form4.dropdown(`script.autobreak.crops.name`,[`script.autobreak.no_seed.name`,`script.autobreak.seeding.name`],{defaultValueIndex: Number(profile[10]),tooltip:`script.autobreak.crops_tooltip.name`});
 				form4.dropdown(`script.autobreak.consider_block.name`,[`script.autobreak.no.name`,`script.autobreak.yes.name`],{defaultValueIndex: Number(profile[11]),tooltip:`script.autobreak.consider_block_tooltip.name`});
