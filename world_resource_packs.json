@@ -7,11 +7,6 @@
 	},
 	
 	{
-		"pack_id" : "0923f700-02f0-11ed-f12f-9f3748b05f27",
-		"version" : [ 2, 2, 1 ]
-	},
-	
-	{
 		"pack_id" : "b2224d2f-ce06-44f4-bdfa-5ac6539f45cd",
 		"subpack" : "fivehundred",
 		"version" : [ 1, 1, 1 ]

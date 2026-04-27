@@ -2,17 +2,6 @@
 [
 	
 	{
-		"pack_id" : "b773597b-bffd-48d5-8605-f2b5f410d26d",
-		"version" : [ 2, 4, 0 ]
-	},
-	
-	{
-		"pack_id" : "f2d08156-cef9-4194-a4bd-3acf85c44b4e",
-		"subpack" : "nomal",
-		"version" : [ 2, 2, 1 ]
-	},
-	
-	{
 		"pack_id" : "3bfc4594-c205-4cf6-9bcd-0c423a6f634b",
 		"version" : [ 1, 21, 130 ]
 	}
