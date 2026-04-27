@@ -4,7 +4,7 @@ import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVe
 import "./mining.js"
 import "./form.js"
 import "./placing.js"
-import "./test.js"
+import "tumble/tumbleMain.js"
 
 function getNewMode(mode,max,player){
 	let newmode = ((mode+1)%max);

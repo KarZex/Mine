@@ -1,0 +1,19 @@
+{
+  "music.game.tumble.vanilla": {
+    "category": "music",
+    "sounds": [
+      "sounds/music/game/tumble/vanilla/tumble_01",
+      "sounds/music/game/tumble/vanilla/tumble_02",
+      "sounds/music/game/tumble/vanilla/tumble_03",
+      "sounds/music/game/tumble/vanilla/tumble_04",
+      "sounds/music/game/tumble/vanilla/tumble_05",
+      "sounds/music/game/tumble/vanilla/tumble_06",
+      "sounds/music/game/tumble/vanilla/tumble_07",
+      "sounds/music/game/tumble/vanilla/tumble_08",
+      "sounds/music/game/tumble/vanilla/tumble_09",
+      "sounds/music/game/tumble/vanilla/tumble_10"
+    ],
+    "load_on_low_memory": true,
+    "stream": true
+  }
+}
