@@ -7,15 +7,15 @@ import { getInventoryItem,isBlockFront,absVector2,Vector3Sub, getVector2E,Distan
 
 //一度に破壊できる最大ブロック数
 //Maximum number of blocks that can be destroyed at once
-export const MAX_BLOCKS = 1024;
+export const MAX_BLOCKS = 4096;
 
 //一括破壊時に耐久値が減少するか
 //Durability decreases when destroyed
-export const DEDUCE_DURABILITY = true;
+export const DEDUCE_DURABILITY = false;
 
 //ツールによるブロック破壊の制限
 //Restricting block destruction by tools
-export const TOOL_SETTING = true;
+export const TOOL_SETTING = false;
 
 //各方向の最大距離設定
 //Maximum distance settings in each direction
