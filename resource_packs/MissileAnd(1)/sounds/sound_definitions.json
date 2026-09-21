@@ -1,19 +1,79 @@
 {
-  "music.game.tumble.vanilla": {
-    "category": "music",
-    "sounds": [
-      "sounds/music/game/tumble/vanilla/tumble_01",
-      "sounds/music/game/tumble/vanilla/tumble_02",
-      "sounds/music/game/tumble/vanilla/tumble_03",
-      "sounds/music/game/tumble/vanilla/tumble_04",
-      "sounds/music/game/tumble/vanilla/tumble_05",
-      "sounds/music/game/tumble/vanilla/tumble_06",
-      "sounds/music/game/tumble/vanilla/tumble_07",
-      "sounds/music/game/tumble/vanilla/tumble_08",
-      "sounds/music/game/tumble/vanilla/tumble_09",
-      "sounds/music/game/tumble/vanilla/tumble_10"
-    ],
-    "load_on_low_memory": true,
-    "stream": true
+  "format_version": "1.21.50",
+  "sound_definitions": {
+    "music.game.tumble.vanilla": {
+      "category": "music",
+      "sounds": [
+        "sounds/music/game/tumble/vanilla/tumble_01",
+        "sounds/music/game/tumble/vanilla/tumble_02",
+        "sounds/music/game/tumble/vanilla/tumble_03",
+        "sounds/music/game/tumble/vanilla/tumble_04",
+        "sounds/music/game/tumble/vanilla/tumble_05",
+        "sounds/music/game/tumble/vanilla/tumble_06",
+        "sounds/music/game/tumble/vanilla/tumble_07",
+        "sounds/music/game/tumble/vanilla/tumble_08",
+        "sounds/music/game/tumble/vanilla/tumble_09",
+        "sounds/music/game/tumble/vanilla/tumble_10"
+      ],
+      "load_on_low_memory": true,
+      "stream": true
+    },
+    "tumble.cdtick": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/cdtick"
+      ]
+    },
+    "tumble.gameend": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/gameend"
+      ]
+    },
+    "tumble.gamestart": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/gamestart"
+      ]
+    },
+    "tumble.lavadeath": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/lavadeath1",
+        "sounds/tumble/lavadeath2",
+        "sounds/tumble/lavadeath3"
+      ]
+    },
+    "tumble.shortfall": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/shortfall1",
+        "sounds/tumble/shortfall2"
+      ]
+    },
+    "tumble.showdown": {
+      "__use_legacy_max_distance": true,
+      "category": "player",
+      "max_distance": 48.0,
+      "min_distance": null,
+      "sounds": [
+        "sounds/tumble/showdown"
+      ]
+    }
   }
 }

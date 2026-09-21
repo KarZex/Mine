@@ -1,7 +1,7 @@
-import { world, system, EquipmentSlot,EntityComponentTypes,ItemComponentTypes } from "@minecraft/server"
+import { world, system, EquipmentSlot,EntityComponentTypes,ItemComponentTypes, BlockComponent, BlockComponentTypes, EntityType, EntityTypes, GameMode } from "@minecraft/server"
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
-import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVector3 } from "./usefulFunction.js"
-import { NoBreakBlocks, blockSeeding, MAX_DISTANCE_Y_UP,MAX_DISTANCE_Y_DOWN, MAX_DISTANCE_Z,breakBlockAnotherId ,getBlockisCollective } from "./config.js"
+import { removeInventoryItem,removegroundItem,absVector2,Vector3Sub, getVector2E,DistanceVector3 } from "./usefulFunction.js"
+import { NoBreakBlocks, blockSeeding, getBreakCancelBlocks,MAX_DISTANCE_Y_DOWN, MAX_DISTANCE_Z,breakBlockAnotherId ,getBlockisCollective } from "./config.js"
 
 function blockDestroyTool( item,block ){
 	if( 
@@ -138,10 +138,9 @@ function damageing(player){
 	}
 }
 
-async function breakBlockloot(player,blockId,location,view,profile,item){
+async function breakBlockloot(player,blockId,location,view,profile,item,dummy){
 	//world.sendMessage(`${Number(profile[1])}`)
 	const dim = world.getDimension(player.dimension.id);
-	//world.sendMessage(`${blockId} vs ${dim.getBlock(location).typeId}`);
 	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
 	const targetBlockId = dim.getBlock(location).typeId;
 	const O = player.getDynamicProperty(`autobreak:origBlock`);
@@ -149,9 +148,12 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 	const breakIds = breakBlockAnotherId(blockId,targetBlockId,Boolean((profile[9]) == `0`));
 	//world.sendMessage(`${Boolean(profile[13])}`);
 	const blockTags = dim.getBlock(location).getTags();
-	if( ( Number(profile[11]) == 0 && !breakIds ) || NoBreakBlocks.includes(targetBlockId) ){  return; }
+	if( ( Number(profile[11]) == 0 && !breakIds ) || NoBreakBlocks.includes(targetBlockId) ){ return; }
 	if( player.getDynamicProperty(`autobreak:brokenBlocks`) >= Number(profile[1]) ){ return; }
 	if( world.getDynamicProperty(`autobreak:use_tool`) && !blockDestroyTool(item,dim.getBlock(location)) ){ return; }
+	if( dummy.getDynamicProperty(`${location.x};${location.y};${location.z}`) ){ return; }
+	// world.sendMessage(`${dim.getBlock(location).getComponent(BlockComponentTypes.DynamicProperties).isValid}`);
+	// if( dim.getBlock(location).getComponent(BlockComponentTypes.DynamicProperties).get("dobreak") ){ return; }
 	//world.sendMessage(`${location.x},${location.y},${location.z},xz${getorigin2( O,location,view,Number(profile[0]) )},MIN${O.y - Number(profile[5]) + getorigin2( O,location,view,Number(profile[0]) )},MAX${O.y + Number(profile[4]) + getorigin2( O,location,view,Number(profile[0]) )}`)
 	if(
 		location.x < O.x - view[0] ||
@@ -162,21 +164,16 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 		location.z > O.z + view[3] 
 	){ return; }
 	if( !damageing(player) ){ return; }
-	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
-	if( Number(profile[8]) == 0 || ( getBlockIsntDrop(player,Number(profile[8]),targetBlockId) )  ){
-		player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${location.x} ${location.y} ${location.z} mainhand`);
-	}
-	player.setDynamicProperty(`autobreak:brokenBlocks`,player.getDynamicProperty(`autobreak:brokenBlocks`)+1);
-	dim.setBlockType(location, "minecraft:air");
-	if( Number(profile[10]) == 1 ){ blockSeeding(targetBlockId,dim.getBlock(location).below(1),player); }
+	dummy.setDynamicProperty(`${location.x};${location.y};${location.z}`,true)
+	//dim.getBlock(location).getComponent(BlockComponentTypes.DynamicProperties).set("dobreak",true);
+	print(`${player.getDynamicProperty(`autobreak:brokenBlocks`)}`)
 	await system.waitTicks(1);
-	//world.sendMessage(`${location.x},${location.y},${location.z}`);
-	//dim.setBlockType({x:location.x+2,y:location.y,z:location.z}, "minecraft:emerald_block");
 	for( let i = -1; i < 2; i++ ){
 		for( let j = -1; j < 2; j++ ){
 			for( let k = -1; k < 2; k++ ){
 				const P = {x:location.x+i,y:location.y+j,z:location.z+k};
-				breakBlockloot(player,blockId,P,view,profile,item);
+				if( dummy.getDynamicProperty(`${P.x};${P.y};${P.z}`) ){ continue; }
+				breakBlockloot(player,blockId,P,view,profile,item,dummy);
 				//dim.setBlockType({x:P.x+1,y:P.y,z:P.z}, "minecraft:bedrock");
 				//world.sendMessage(`${P.x},${P.y},${P.z},,${location.y+j},,${getorigin2( O,location,view,Number(profile[0]) )}`)
 				/*
@@ -194,6 +191,53 @@ async function breakBlockloot(player,blockId,location,view,profile,item){
 			}
 		}
 	}
+	//await system.waitTicks(20);
+	//player.runCommand(`loot give @s mine ${location.x} ${location.y} ${location.z} mainhand`);
+	let drop = false
+	if( Number(profile[8]) == 0 || ( getBlockIsntDrop(player,Number(profile[8]),targetBlockId) )  ){
+		drop = true
+		player.runCommand(`loot spawn ${player.location.x} ${player.location.y} ${player.location.z} mine ${location.x} ${location.y} ${location.z} mainhand`);
+	}
+	const blockIds = dim.getBlock(location).typeId;
+	const states = dim.getBlock(location).permutation;
+	//dim.setBlockPermutation(location,states);
+	player.setDynamicProperty(`autobreak:brokenBlocks`,player.getDynamicProperty(`autobreak:brokenBlocks`)+1);
+	dim.setBlockType(location, "minecraft:air");
+	if( Number(profile[10]) == 1 ){ blockSeeding(targetBlockId,dim.getBlock(location).below(1),player); }
+	let c = 0;
+	//sdim.getBlock(location).getComponent("minecraft:dynamic_properties").set("dobreak",true);
+	while( true ){
+		if( c > 200 ){
+			print(`aaa`);
+			return false
+		}
+		else if( blockIds == "minecraft:air" ){
+			return false
+		}
+		else{
+			c += 1;
+			await system.waitTicks(1)
+			try{
+				if( player.hasTag(`cancel`) ){
+					if( !drop || player.getGameMode() == GameMode.Creative || removeInventoryItem(player,getBreakCancelBlocks(blockIds)) ){
+						print(`restored ${blockIds} ${location.x} ${location.y} ${location.z}`);
+						dim.setBlockType(location, blockIds);
+						dim.setBlockPermutation(location,states);
+					}
+					// else if( removegroundItem(getBreakCancelBlocks(blockIds)) ){
+					// 	print(`restored ${blockIds} ${location.x} ${location.y} ${location.z}`);
+					// 	dim.setBlockPermutation(location,states);
+					// 	dim.setBlockType(location, blockIds);
+					// }
+					break
+				}
+			}catch{ return }
+
+		}
+	}
+
+	//world.sendMessage(`${location.x},${location.y},${location.z}`);
+	//dim.setBlockType({x:location.x+2,y:location.y,z:location.z}, "minecraft:emerald_block");
 }
 
 world.beforeEvents.playerBreakBlock.subscribe( async ev => {
@@ -201,6 +245,7 @@ world.beforeEvents.playerBreakBlock.subscribe( async ev => {
 		const location = ev.block.location;
 		const blockId = ev.block.typeId;
 		const player = ev.player;
+		
 		const origBlock = ev.block.location;
 		let item = undefined;
 		let profileId = player.getDynamicProperty("autobreak:currentProfileIndex");
@@ -223,7 +268,13 @@ world.beforeEvents.playerBreakBlock.subscribe( async ev => {
 			try{
 				const gun = player.getComponent(EntityComponentTypes.Equippable).getEquipment(EquipmentSlot.Mainhand);
 				const dmgCom = gun.getComponent(ItemComponentTypes.Durability);
-				if( dmgCom.damage == undefined ){
+				if( dmgCom.damage == undefined && (
+					item.hasTag(`minecraft:is_pickaxe`) ||
+					item.hasTag(`minecraft:is_axe`) ||
+					item.hasTag(`minecraft:is_shovel`) ||
+					item.hasTag(`minecraft:is_shears`) ||
+					item.hasTag(`minecraft:is_hoe`) ) 
+				){
 					return false
 				}
 				else{
@@ -232,24 +283,39 @@ world.beforeEvents.playerBreakBlock.subscribe( async ev => {
 					
 				}
 			}catch{ return false }
+			ev.cancel = true
 			player.setDynamicProperty(`autobreak:brokenBlocks`,1);
 			player.setDynamicProperty(`autobreak:origBlock`,origBlock);
 			//world.sendMessage(`${player.getRotation().y}`);
 			const view = setDistance(player,Number(profile[6]),Number(profile[7]),Number(profile[3]),Number(profile[2]));
 			//world.sendMessage(`Breaking block at ${location.x}, ${location.y}, ${location.z}`);
 			if( Number(profile[10]) == 1 ){ blockSeeding(blockId,ev.block.below(1),player); }
-			system.runTimeout( async () => {
-				for( let i = -1; i < 2; i++ ){
-					for( let j = -1; j < 2; j++ ){
-						for( let k = -1; k < 2; k++ ){
-							const P = {x:location.x+i,y:location.y+j,z:location.z+k};
-							//player.dimension.setBlockType({x:P.x+1,y:P.y,z:P.z}, "minecraft:bedrock");
-							breakBlockloot(player,blockId,P,view,profile,item);
-							//world.sendMessage(`${P.x},${P.y},${P.z},,${location.y+j},,${getorigin2( O,location,view,Number(profile[0]) )}`)
-						}
-					}
-				}
-			} )
+			let dummy;
+			system.runTimeout( () => {
+				player.removeTag(`cancel`);
+				dummy = player.dimension.spawnEntity(`cow`,location);
+			},0 )
+				//dummy = player.dimension.spawnEntity(`cow`,location);
+			await system.waitTicks(1);
+			dummy.addEffect(`invisibility`,255,{ amplifier:255 });
+			dummy.addEffect(`resistance`,255,{ amplifier:255 });
+			dummy.addEffect(`instant_health`,255,{ amplifier:2 });
+			breakBlockloot(player,blockId,location,view,profile,item,dummy);
+			await system.waitTicks(200);
+			player.removeTag(`cancel`);
+			dummy.kill();
+			// system.runTimeout( async () => {
+			// 	for( let i = -1; i < 2; i++ ){
+			// 		for( let j = -1; j < 2; j++ ){
+			// 			for( let k = -1; k < 2; k++ ){
+			// 				const P = {x:location.x+i,y:location.y+j,z:location.z+k};
+			// 				//player.dimension.setBlockType({x:P.x+1,y:P.y,z:P.z}, "minecraft:bedrock");
+			// 				breakBlockloot(player,blockId,P,view,profile,item);
+			// 				//world.sendMessage(`${P.x},${P.y},${P.z},,${location.y+j},,${getorigin2( O,location,view,Number(profile[0]) )}`)
+			// 			}
+			// 		}
+			// 	}
+			// } )
 		}
 	}
 });

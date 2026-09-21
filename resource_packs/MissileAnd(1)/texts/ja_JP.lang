@@ -96,6 +96,10 @@ script.autobreak.name_label.name=name:
 script.autobreak.newline.name=,\n
 script.autobreak.drop_profile.name=ドロップ設定
 
+script.autobreak.sneak_use.name=スニーク使用
+script.autobreak.mode_change.name=モード変更
+script.autobreak.cancel.name=一括破壊キャンセル(10秒以内のみ有効)
+
 item.zex:admin_setting=一括アドオン管理者設定
 script.autobreak.break_profile_tooltip.name=一括破壊は、スニークしながらブロックを破壊することで動作します。また、ピッケルなどのツールを持ってスニークしながら、使用ボタンを押すことで、プロファイルメニューが表示されます。
 script.autobreak.place_profile_tooltip.name=一括設置は、丸石1つでクラフトするアイテムを左手に持って、スニークしながらブロックを設置することで動作します。また、任意のブロックに視点を向けて、スニークしながら、攻撃ボタンを押すことで、プロファイルメニューが表示されます。
