@@ -1,0 +1,40 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "zex:color_8060e0",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "color_8060e0",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:light_dampening": 0,
+      "minecraft:map_color": "#8060e0"
+    }
+  }
+}
