@@ -7,15 +7,15 @@ import { getInventoryItem,isBlockFront,absVector2,Vector3Sub, getVector2E,Distan
 
 //一度に破壊できる最大ブロック数
 //Maximum number of blocks that can be destroyed at once
-export const MAX_BLOCKS = 1024;
+export const MAX_BLOCKS = 4096;
 
 //一括破壊時に耐久値が減少するか
 //Durability decreases when destroyed
-export const DEDUCE_DURABILITY = true;
+export const DEDUCE_DURABILITY = false;
 
 //ツールによるブロック破壊の制限
 //Restricting block destruction by tools
-export const TOOL_SETTING = true;
+export const TOOL_SETTING = false;
 
 //各方向の最大距離設定
 //Maximum distance settings in each direction
@@ -300,6 +300,39 @@ export function breakBlockAnotherId(blockId,targetId,is_9_enabled){
         else{
             return false;
         }
+    }
+}
+
+export function getBreakCancelBlocks(blockId){
+    if( blockId == "minecraft:stone" ){
+        return [ "minecraft:stone","minecraft:cobblestone" ];
+    }
+    else if( blockId == "minecraft:grass_block" ){
+        return [ "minecraft:grass_block","minecraft:dirt" ];
+    }
+    else if( blockId == "minecraft:mycelium" ){
+        return [ "minecraft:mycelium","minecraft:dirt" ];
+    }
+    else if( blockId == "minecraft:farmland" ){
+        return [ "minecraft:farmland","minecraft:dirt" ];
+    }
+    else if( blockId == "minecraft:grass_path" ){
+        return [ "minecraft:grass_path","minecraft:dirt" ];
+    }
+    else if( blockId == "minecraft:podzol" ){
+        return [ "minecraft:podzol","minecraft:dirt" ];
+    }
+    else if( blockId == "minecraft:deepslate" ){
+        return [ "minecraft:deepslate","minecraft:cobbled_deepslate" ];
+    }
+    else if( blockId == "minecraft:crimson_nylium" ){
+        return [ "minecraft:crimson_nylium","minecraft:netherrack" ];
+    }
+    else if( blockId == "minecraft:warped_nylium" ){
+        return [ "minecraft:warped_nylium","minecraft:netherrack" ];
+    }
+    else{
+        return [ blockId ];
     }
 }
 

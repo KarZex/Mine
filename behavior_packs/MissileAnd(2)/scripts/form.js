@@ -2,7 +2,7 @@ import { world, system, EquipmentSlot,EntityComponentTypes } from "@minecraft/se
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui"
 import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVector3 } from "./usefulFunction.js"
 import { defaultProfile, defaultProfileDisable, defaultBlockIsntDrop,TOOL_SETTING, DEDUCE_DURABILITY,MAX_BLOCKS ,defaultPlaceProfile,defaultPlaceProfileDisable,defaultBlockIsntDropName,DirectionBlock } from "./config.js"
-import { getBlockTexts } from "./missileMain.js"
+import { getBlockTexts,printmode } from "./missileMain.js"
 system.afterEvents.scriptEventReceive.subscribe( e => {
 	if( e.id == `autobreak:admin` ){
 		const user = e.sourceEntity;
@@ -24,6 +24,44 @@ system.afterEvents.scriptEventReceive.subscribe( e => {
 				if( world.getDynamicProperty(`autobreak:maxBlock`) != Number(r2.formValues[2]) ){
 					world.setDynamicProperty(`autobreak:maxBlock`,Number(r2.formValues[2]));
 					world.sendMessage(`Max Block is now ${r2.formValues[2]}`);
+				}
+				
+			}
+		});
+	}
+	if( e.id == `autobreak:sneak_use` ){
+		const user = e.sourceEntity;
+		const from = new ActionFormData();
+		from.title(`script.autobreak.sneak_use.name`);
+		from.button(`script.autobreak.mode_change.name`);
+		from.button(`script.autobreak.setting.name`);
+		from.button(`script.autobreak.cancel.name`);
+		from.show(user).then( r => {
+			if (!r.canceled) {
+				if( r.selection == 0 ){
+					const from = new ActionFormData();
+					let indexs = [];
+					from.title(`mode`);
+					for( let i = 0; i < user.getDynamicProperty(`autobreak:profile_true_num`)+1; i++ ){
+						if( user.getDynamicProperty(`autobreak:profile${i}_disable`) ){
+							from.button(`${user.getDynamicProperty(`autobreak:profile${i}_name`)}`);
+							indexs.push(i);
+						}
+					}
+					from.show(user).then( r2 => {
+						if( !r2.canceled ){
+							const newMode = indexs[r2.selection];
+							user.setDynamicProperty("autobreak:currentProfileIndex",newMode );
+							user.setDynamicProperty("autobreak:currentProfile",user.getDynamicProperty(`autobreak:profile${newMode}`));
+							printmode(user,newMode);
+						}
+					})
+				}
+				else if( r.selection == 1 ){
+					user.runCommand(`scriptevent autobreak:phone_break_profile`)
+				}
+				else if( r.selection == 2 ){
+					user.addTag(`cancel`);
 				}
 				
 			}

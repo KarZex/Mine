@@ -55,6 +55,7 @@ system.afterEvents.scriptEventReceive.subscribe( async e => {
         }
 
         world.getDimension("overworld").runCommand(`tickingarea remove tumble`);
+        //music play music.game.tumble.vanilla 1 0 loop
 
     }
 })

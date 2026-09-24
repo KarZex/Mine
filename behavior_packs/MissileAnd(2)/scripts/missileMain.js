@@ -4,7 +4,6 @@ import { isBlockUnder,isBlockFront,absVector2,Vector3Sub, getVector2E,DistanceVe
 import "./mining.js"
 import "./form.js"
 import "./placing.js"
-import "tumble/tumbleMain.js"
 
 function getNewMode(mode,max,player){
 	let newmode = ((mode+1)%max);
@@ -15,7 +14,7 @@ function getNewMode(mode,max,player){
 	return newmode;
 }
 
-function printmode( player,mode ){
+export function printmode( player,mode ){
 	if( mode == 0 ){
 		player.sendMessage({ rawtext: [ { translate:`script.autobreak.currentmode.name` },{ translate:`script.autobreak.disable.name` } ]});
 	}
@@ -165,7 +164,14 @@ system.runInterval(() => {
 				item.hasTag(`minecraft:is_shears`) ||
 				item.hasTag(`minecraft:is_hoe`) )
 			){ printPlacemodeSneak(player); }
-			else{
+			else if(
+				player.isSneaking && (
+				item.hasTag(`minecraft:is_pickaxe`) ||
+				item.hasTag(`minecraft:is_axe`) ||
+				item.hasTag(`minecraft:is_shovel`) ||
+				item.hasTag(`minecraft:is_shears`) ||
+				item.hasTag(`minecraft:is_hoe`) )
+			){
 			  printmodeSneak(player);
 			}
 			/*
@@ -195,23 +201,7 @@ world.afterEvents.itemUse.subscribe( e => {
 		item.hasTag(`minecraft:is_shears`) ||
 		item.hasTag(`minecraft:is_hoe`) )
 	){
-		const from = new ActionFormData();
-		let indexs = [];
-		from.title(`mode`);
-		for( let i = 0; i < player.getDynamicProperty(`autobreak:profile_true_num`)+1; i++ ){
-			if( player.getDynamicProperty(`autobreak:profile${i}_disable`) ){
-				from.button(`${player.getDynamicProperty(`autobreak:profile${i}_name`)}`);
-				indexs.push(i);
-			}
-		}
-		from.show(player).then( r => {
-			if( !r.canceled ){
-				const newMode = indexs[r.selection];
-				player.setDynamicProperty("autobreak:currentProfileIndex",newMode );
-				player.setDynamicProperty("autobreak:currentProfile",player.getDynamicProperty(`autobreak:profile${newMode}`));
-				printmode(player,newMode);
-			}
-		})
+		player.runCommand(`scriptevent autobreak:sneak_use`)
 	}
 } )
 world.afterEvents.entityHitBlock.subscribe( e => {

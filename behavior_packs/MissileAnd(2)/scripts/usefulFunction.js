@@ -13,6 +13,41 @@ export function getInventoryItem(player,typeId){
 	}
 	return c;
 }
+export function removeInventoryItem(player,typeIds){
+    if( typeIds[0].includes("double_slab") ){
+        const item = typeIds[0].replace("double_slab","slab");
+        for(let j = 0; j < 36; j++){
+            let Haditem = player.getComponent("inventory").container.getItem(j);
+            if( Haditem != undefined && Haditem.typeId == item && Haditem.amount > 1 ){
+                player.runCommand(`clear @s ${Haditem.typeId} 0 2`);
+                return true;
+            }
+        }
+        return false;
+    }
+    else{
+        for(let j = 0; j < 36; j++){
+            let Haditem = player.getComponent("inventory").container.getItem(j);
+            if( Haditem != undefined && typeIds.includes(Haditem.typeId) ){
+                player.runCommand(`clear @s ${Haditem.typeId} 0 1`);
+                return true;
+            }
+        }
+        return false;
+    }
+}
+export function removegroundItem(typeIds){
+	const itemEntities = world.getDimension(`overworld`).getEntities({ type:`item` })
+    if( itemEntities.length > 0 ){
+        for( const itemEntity of itemEntities ){
+            if( typeIds.includes(itemEntity.getComponent(EntityComponentTypes.Item).itemStack.typeId) ){
+                itemEntity.getComponent(EntityComponentTypes.Item).itemStack.amount--;
+	            return true;
+            }
+        }
+    }
+	return false;
+}
 export function absVector3( V ){
     let abs_x = V.x * V.x;
     let abs_y = V.y * V.y;
