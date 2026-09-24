@@ -4,267 +4,3655 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "block_isnt_drop": { "textures": [ "textures/blocks/block_isnt_drop" ] },
-	
-    "tnt2_top": { "textures": [ "textures/blocks/tnt2_top" ] },
-    "tnt2_side": { "textures": [ "textures/blocks/tnt2" ] },
-    "tnt2_bottom": { "textures": [ "textures/blocks/tnt2_bottom" ] },
-	
-    "tnt3_top": { "textures": [ "textures/blocks/tnt3_top" ] },
-    "tnt3_side": { "textures": [ "textures/blocks/tnt3" ] },
-    "tnt3_bottom": { "textures": [ "textures/blocks/tnt3_bottom" ] },
-	
-    "tnt4_top": { "textures": [ "textures/blocks/tnt4_top" ] },
-    "tnt4_side": { "textures": [ "textures/blocks/tnt4" ] },
-    "tnt4_bottom": { "textures": [ "textures/blocks/tnt4_bottom" ] },
-	
-    "tnt5_top": { "textures": [ "textures/blocks/tnt5_top" ] },
-    "tnt5_side": { "textures": [ "textures/blocks/tnt5" ] },
-    "tnt5_bottom": { "textures": [ "textures/blocks/tnt5_bottom" ] },
-	
-    "tnt6_top": { "textures": [ "textures/blocks/tnt6_top" ] },
-    "tnt6_side": { "textures": [ "textures/blocks/tnt6" ] },
-    "tnt6_bottom": { "textures": [ "textures/blocks/tnt6_bottom" ] },
-	
-    "tnt7_top": { "textures": [ "textures/blocks/tnt7_top" ] },
-    "tnt7_side": { "textures": [ "textures/blocks/tnt7" ] },
-    "tnt7_bottom": { "textures": [ "textures/blocks/tnt7_bottom" ] },
-	
-    "tnt8_top": { "textures": [ "textures/blocks/tnt8_top" ] },
-    "tnt8_side": { "textures": [ "textures/blocks/tnt8" ] },
-    "tnt8_bottom": { "textures": [ "textures/blocks/tnt8_bottom" ] },
-	
-    "tnt9_top": { "textures": [ "textures/blocks/tnt9_top" ] },
-    "tnt9_side": { "textures": [ "textures/blocks/tnt9" ] },
-    "tnt9_bottom": { "textures": [ "textures/blocks/tnt9_bottom" ] },
-	
-    "tnt10_top": { "textures": [ "textures/blocks/tnt10_top" ] },
-    "tnt10_side": { "textures": [ "textures/blocks/tnt10" ] },
-    "tnt10_bottom": { "textures": [ "textures/blocks/tnt10_bottom" ] },
-	
-    "tnt11_top": { "textures": [ "textures/blocks/tnt11_top" ] },
-    "tnt11_side": { "textures": [ "textures/blocks/tnt11" ] },
-    "tnt11_bottom": { "textures": [ "textures/blocks/tnt11_bottom" ] },
-	
-    "tnt12_top": { "textures": [ "textures/blocks/tnt12_top" ] },
-    "tnt12_side": { "textures": [ "textures/blocks/tnt12" ] },
-    "tnt12_bottom": { "textures": [ "textures/blocks/tnt12_bottom" ] },
-	
-    "tnt13_top": { "textures": [ "textures/blocks/tnt13_top" ] },
-    "tnt13_side": { "textures": [ "textures/blocks/tnt13" ] },
-    "tnt13_bottom": { "textures": [ "textures/blocks/tnt13_bottom" ] },
-	
-    "tnt14_top": { "textures": [ "textures/blocks/tnt14_top" ] },
-    "tnt14_side": { "textures": [ "textures/blocks/tnt14" ] },
-    "tnt14_bottom": { "textures": [ "textures/blocks/tnt14_bottom" ] },
-	
-    "tnt15_top": { "textures": [ "textures/blocks/tnt15_top" ] },
-    "tnt15_side": { "textures": [ "textures/blocks/tnt15" ] },
-    "tnt15_bottom": { "textures": [ "textures/blocks/tnt15_bottom" ] },
-	
-    "tnt16_top": { "textures": [ "textures/blocks/tnt16_top" ] },
-    "tnt16_side": { "textures": [ "textures/blocks/tnt16" ] },
-    "tnt16_bottom": { "textures": [ "textures/blocks/tnt16_bottom" ] },
-	
-    "tnt17_top": { "textures": [ "textures/blocks/tnt17_top" ] },
-    "tnt17_side": { "textures": [ "textures/blocks/tnt17" ] },
-    "tnt17_bottom": { "textures": [ "textures/blocks/tnt17_bottom" ] },
-	
-    "tnt18_top": { "textures": [ "textures/blocks/tnt18_top" ] },
-    "tnt18_side": { "textures": [ "textures/blocks/tnt18" ] },
-    "tnt18_bottom": { "textures": [ "textures/blocks/tnt18_bottom" ] },
-	
-    "tnt19_top": { "textures": [ "textures/blocks/tnt19_top" ] },
-    "tnt19_side": { "textures": [ "textures/blocks/tnt19" ] },
-    "tnt19_bottom": { "textures": [ "textures/blocks/tnt19_bottom" ] },
-	
-    "tnt20_top": { "textures": [ "textures/blocks/tnt20_top" ] },
-    "tnt20_side": { "textures": [ "textures/blocks/tnt20" ] },
-    "tnt20_bottom": { "textures": [ "textures/blocks/tnt20_bottom" ] },
-	
-    "tnt21_top": { "textures": [ "textures/blocks/tnt21_top" ] },
-    "tnt21_side": { "textures": [ "textures/blocks/tnt21" ] },
-    "tnt21_bottom": { "textures": [ "textures/blocks/tnt21_bottom" ] },
-	
-    "tnt22_top": { "textures": [ "textures/blocks/tnt22_top" ] },
-    "tnt22_side": { "textures": [ "textures/blocks/tnt22" ] },
-    "tnt22_bottom": { "textures": [ "textures/blocks/tnt22_bottom" ] },
-	
-    "tnt23_top": { "textures": [ "textures/blocks/tnt23_top" ] },
-    "tnt23_side": { "textures": [ "textures/blocks/tnt23" ] },
-    "tnt23_bottom": { "textures": [ "textures/blocks/tnt23_bottom" ] },
-	
-    "tnt24_top": { "textures": [ "textures/blocks/tnt24_top" ] },
-    "tnt24_side": { "textures": [ "textures/blocks/tnt24" ] },
-    "tnt24_bottom": { "textures": [ "textures/blocks/tnt24_bottom" ] },
-	
-    "tnt25_top": { "textures": [ "textures/blocks/tnt25_top" ] },
-    "tnt25_side": { "textures": [ "textures/blocks/tnt25" ] },
-    "tnt25_bottom": { "textures": [ "textures/blocks/tnt25_bottom" ] },
-	
-    "tnt26_top": { "textures": [ "textures/blocks/tnt26_top" ] },
-    "tnt26_side": { "textures": [ "textures/blocks/tnt26" ] },
-    "tnt26_bottom": { "textures": [ "textures/blocks/tnt26_bottom" ] },
-	
-    "tnt27_top": { "textures": [ "textures/blocks/tnt27_top" ] },
-    "tnt27_side": { "textures": [ "textures/blocks/tnt27" ] },
-    "tnt27_bottom": { "textures": [ "textures/blocks/tnt27_bottom" ] },
-	
-    "tnt28_top": { "textures": [ "textures/blocks/tnt28_top" ] },
-    "tnt28_side": { "textures": [ "textures/blocks/tnt28" ] },
-    "tnt28_bottom": { "textures": [ "textures/blocks/tnt28_bottom" ] },
-	
-    "tnt29_top": { "textures": [ "textures/blocks/tnt29_top" ] },
-    "tnt29_side": { "textures": [ "textures/blocks/tnt29" ] },
-    "tnt29_bottom": { "textures": [ "textures/blocks/tnt29_bottom" ] },
-	
-    "tnt30_top": { "textures": [ "textures/blocks/tnt30_top" ] },
-    "tnt30_side": { "textures": [ "textures/blocks/tnt30" ] },
-    "tnt30_bottom": { "textures": [ "textures/blocks/tnt30_bottom" ] },
-	
-    "tnt31_top": { "textures": [ "textures/blocks/tnt31_top" ] },
-    "tnt31_side": { "textures": [ "textures/blocks/tnt31" ] },
-    "tnt31_bottom": { "textures": [ "textures/blocks/tnt31_bottom" ] },
-	
-    "tnt32_top": { "textures": [ "textures/blocks/tnt32_top" ] },
-    "tnt32_side": { "textures": [ "textures/blocks/tnt32" ] },
-    "tnt32_bottom": { "textures": [ "textures/blocks/tnt32_bottom" ] },
-	
-    "tnt33_top": { "textures": [ "textures/blocks/tnt33_top" ] },
-    "tnt33_side": { "textures": [ "textures/blocks/tnt33" ] },
-    "tnt33_bottom": { "textures": [ "textures/blocks/tnt33_bottom" ] },
-	
-    "tnt34_top": { "textures": [ "textures/blocks/tnt34_top" ] },
-    "tnt34_side": { "textures": [ "textures/blocks/tnt34" ] },
-    "tnt34_bottom": { "textures": [ "textures/blocks/tnt34_bottom" ] },
-	
-    "tnt35_top": { "textures": [ "textures/blocks/tnt35_top" ] },
-    "tnt35_side": { "textures": [ "textures/blocks/tnt35" ] },
-    "tnt35_bottom": { "textures": [ "textures/blocks/tnt35_bottom" ] },
-	
-    "tnt36_top": { "textures": [ "textures/blocks/tnt36_top" ] },
-    "tnt36_side": { "textures": [ "textures/blocks/tnt36" ] },
-    "tnt36_bottom": { "textures": [ "textures/blocks/tnt36_bottom" ] },
-	
-    "tnt37_top": { "textures": [ "textures/blocks/tnt37_top" ] },
-    "tnt37_side": { "textures": [ "textures/blocks/tnt37" ] },
-    "tnt37_bottom": { "textures": [ "textures/blocks/tnt37_bottom" ] },
-	
-    "tnt38_top": { "textures": [ "textures/blocks/tnt38_top" ] },
-    "tnt38_side": { "textures": [ "textures/blocks/tnt38" ] },
-    "tnt38_bottom": { "textures": [ "textures/blocks/tnt38_bottom" ] },
-	
-    "tnt39_top": { "textures": [ "textures/blocks/tnt39_top" ] },
-    "tnt39_side": { "textures": [ "textures/blocks/tnt39" ] },
-    "tnt39_bottom": { "textures": [ "textures/blocks/tnt39_bottom" ] },
-	
-    "tnt40_top": { "textures": [ "textures/blocks/tnt40_top" ] },
-    "tnt40_side": { "textures": [ "textures/blocks/tnt40" ] },
-    "tnt40_bottom": { "textures": [ "textures/blocks/tnt40_bottom" ] },
-	
-    "tnt41_top": { "textures": [ "textures/blocks/tnt41_top" ] },
-    "tnt41_side": { "textures": [ "textures/blocks/tnt41" ] },
-    "tnt41_bottom": { "textures": [ "textures/blocks/tnt41_bottom" ] },
-	
-    "tnt42_top": { "textures": [ "textures/blocks/tnt42_top" ] },
-    "tnt42_side": { "textures": [ "textures/blocks/tnt42" ] },
-    "tnt42_bottom": { "textures": [ "textures/blocks/tnt42_bottom" ] },
-	
-    "tnt43_top": { "textures": [ "textures/blocks/tnt43_top" ] },
-    "tnt43_side": { "textures": [ "textures/blocks/tnt43" ] },
-    "tnt43_bottom": { "textures": [ "textures/blocks/tnt43_bottom" ] },
-	
-    "tnt44_top": { "textures": [ "textures/blocks/tnt44_top" ] },
-    "tnt44_side": { "textures": [ "textures/blocks/tnt44" ] },
-    "tnt44_bottom": { "textures": [ "textures/blocks/tnt44_bottom" ] },
-	
-    "tnt45_top": { "textures": [ "textures/blocks/tnt45_top" ] },
-    "tnt45_side": { "textures": [ "textures/blocks/tnt45" ] },
-    "tnt45_bottom": { "textures": [ "textures/blocks/tnt45_bottom" ] },
-	
-    "tnt46_top": { "textures": [ "textures/blocks/tnt46_top" ] },
-    "tnt46_side": { "textures": [ "textures/blocks/tnt46" ] },
-    "tnt46_bottom": { "textures": [ "textures/blocks/tnt46_bottom" ] },
-	
-    "tnt47_top": { "textures": [ "textures/blocks/tnt47_top" ] },
-    "tnt47_side": { "textures": [ "textures/blocks/tnt47" ] },
-    "tnt47_bottom": { "textures": [ "textures/blocks/tnt47_bottom" ] },
-	
-    "tnt48_top": { "textures": [ "textures/blocks/tnt48_top" ] },
-    "tnt48_side": { "textures": [ "textures/blocks/tnt48" ] },
-    "tnt48_bottom": { "textures": [ "textures/blocks/tnt48_bottom" ] },
-	
-    "tnt49_top": { "textures": [ "textures/blocks/tnt49_top" ] },
-    "tnt49_side": { "textures": [ "textures/blocks/tnt49" ] },
-    "tnt49_bottom": { "textures": [ "textures/blocks/tnt49_bottom" ] },
-	
-    "tnt50_top": { "textures": [ "textures/blocks/tnt50_top" ] },
-    "tnt50_side": { "textures": [ "textures/blocks/tnt50" ] },
-    "tnt50_bottom": { "textures": [ "textures/blocks/tnt50_bottom" ] },
-	
-    "tnt51_top": { "textures": [ "textures/blocks/tnt51_top" ] },
-    "tnt51_side": { "textures": [ "textures/blocks/tnt51" ] },
-    "tnt51_bottom": { "textures": [ "textures/blocks/tnt51_bottom" ] },
-	
-    "tnt52_top": { "textures": [ "textures/blocks/tnt52_top" ] },
-    "tnt52_side": { "textures": [ "textures/blocks/tnt52" ] },
-    "tnt52_bottom": { "textures": [ "textures/blocks/tnt52_bottom" ] },
-	
-    "tnt53_top": { "textures": [ "textures/blocks/tnt53_top" ] },
-    "tnt53_side": { "textures": [ "textures/blocks/tnt53" ] },
-    "tnt53_bottom": { "textures": [ "textures/blocks/tnt53_bottom" ] },
-	
-    "tnt54_top": { "textures": [ "textures/blocks/tnt54_top" ] },
-    "tnt54_side": { "textures": [ "textures/blocks/tnt54" ] },
-    "tnt54_bottom": { "textures": [ "textures/blocks/tnt54_bottom" ] },
-	
-    "tnt55_top": { "textures": [ "textures/blocks/tnt55_top" ] },
-    "tnt55_side": { "textures": [ "textures/blocks/tnt55" ] },
-    "tnt55_bottom": { "textures": [ "textures/blocks/tnt55_bottom" ] },
-	
-    "tnt56_top": { "textures": [ "textures/blocks/tnt56_top" ] },
-    "tnt56_side": { "textures": [ "textures/blocks/tnt56" ] },
-    "tnt56_bottom": { "textures": [ "textures/blocks/tnt56_bottom" ] },
-	
-    "tnt57_top": { "textures": [ "textures/blocks/tnt57_top" ] },
-    "tnt57_side": { "textures": [ "textures/blocks/tnt57" ] },
-    "tnt57_bottom": { "textures": [ "textures/blocks/tnt57_bottom" ] },
-	
-    "tnt58_top": { "textures": [ "textures/blocks/tnt58_top" ] },
-    "tnt58_side": { "textures": [ "textures/blocks/tnt58" ] },
-    "tnt58_bottom": { "textures": [ "textures/blocks/tnt58_bottom" ] },
-	
-    "tnt59_top": { "textures": [ "textures/blocks/tnt59_top" ] },
-    "tnt59_side": { "textures": [ "textures/blocks/tnt59" ] },
-    "tnt59_bottom": { "textures": [ "textures/blocks/tnt59_bottom" ] },
-	
-    "tnt60_top": { "textures": [ "textures/blocks/tnt60_top" ] },
-    "tnt60_side": { "textures": [ "textures/blocks/tnt60" ] },
-    "tnt60_bottom": { "textures": [ "textures/blocks/tnt60_bottom" ] },
-	
-    "tnt61_top": { "textures": [ "textures/blocks/tnt61_top" ] },
-    "tnt61_side": { "textures": [ "textures/blocks/tnt61" ] },
-    "tnt61_bottom": { "textures": [ "textures/blocks/tnt61_bottom" ] },
-	
-    "tnt62_top": { "textures": [ "textures/blocks/tnt62_top" ] },
-    "tnt62_side": { "textures": [ "textures/blocks/tnt62" ] },
-    "tnt62_bottom": { "textures": [ "textures/blocks/tnt62_bottom" ] },
-	
-    "tnt63_top": { "textures": [ "textures/blocks/tnt63_top" ] },
-    "tnt63_side": { "textures": [ "textures/blocks/tnt63" ] },
-    "tnt63_bottom": { "textures": [ "textures/blocks/tnt63_bottom" ] },
-	
-    "tnt64_top": { "textures": [ "textures/blocks/tnt64_top" ] },
-    "tnt64_side": { "textures": [ "textures/blocks/tnt64" ] },
-    "tnt64_bottom": { "textures": [ "textures/blocks/tnt64_bottom" ] },
-	
-    "tnt65_top": { "textures": [ "textures/blocks/tnt65_top" ] },
-    "tnt65_side": { "textures": [ "textures/blocks/tnt65" ] },
-    "tnt65_bottom": { "textures": [ "textures/blocks/tnt65_bottom" ] },
-	
-    "tnt66_top": { "textures": [ "textures/blocks/tnt66_top" ] },
-    "tnt66_side": { "textures": [ "textures/blocks/tnt66" ] },
-    "tnt66_bottom": { "textures": [ "textures/blocks/tnt66_bottom" ] }
-	
+    "block_isnt_drop": {
+      "textures": [
+        "textures/blocks/block_isnt_drop"
+      ]
+    },
+    "color_000000": {
+      "textures": [
+        "textures/blocks/colorblock/color_000000"
+      ]
+    },
+    "color_000020": {
+      "textures": [
+        "textures/blocks/colorblock/color_000020"
+      ]
+    },
+    "color_000040": {
+      "textures": [
+        "textures/blocks/colorblock/color_000040"
+      ]
+    },
+    "color_000060": {
+      "textures": [
+        "textures/blocks/colorblock/color_000060"
+      ]
+    },
+    "color_000080": {
+      "textures": [
+        "textures/blocks/colorblock/color_000080"
+      ]
+    },
+    "color_0000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0000a0"
+      ]
+    },
+    "color_0000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0000c0"
+      ]
+    },
+    "color_0000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0000e0"
+      ]
+    },
+    "color_0000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_0000ff"
+      ]
+    },
+    "color_002000": {
+      "textures": [
+        "textures/blocks/colorblock/color_002000"
+      ]
+    },
+    "color_002020": {
+      "textures": [
+        "textures/blocks/colorblock/color_002020"
+      ]
+    },
+    "color_002040": {
+      "textures": [
+        "textures/blocks/colorblock/color_002040"
+      ]
+    },
+    "color_002060": {
+      "textures": [
+        "textures/blocks/colorblock/color_002060"
+      ]
+    },
+    "color_002080": {
+      "textures": [
+        "textures/blocks/colorblock/color_002080"
+      ]
+    },
+    "color_0020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0020a0"
+      ]
+    },
+    "color_0020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0020c0"
+      ]
+    },
+    "color_0020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0020e0"
+      ]
+    },
+    "color_0020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_0020ff"
+      ]
+    },
+    "color_004000": {
+      "textures": [
+        "textures/blocks/colorblock/color_004000"
+      ]
+    },
+    "color_004020": {
+      "textures": [
+        "textures/blocks/colorblock/color_004020"
+      ]
+    },
+    "color_004040": {
+      "textures": [
+        "textures/blocks/colorblock/color_004040"
+      ]
+    },
+    "color_004060": {
+      "textures": [
+        "textures/blocks/colorblock/color_004060"
+      ]
+    },
+    "color_004080": {
+      "textures": [
+        "textures/blocks/colorblock/color_004080"
+      ]
+    },
+    "color_0040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0040a0"
+      ]
+    },
+    "color_0040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0040c0"
+      ]
+    },
+    "color_0040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0040e0"
+      ]
+    },
+    "color_0040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_0040ff"
+      ]
+    },
+    "color_006000": {
+      "textures": [
+        "textures/blocks/colorblock/color_006000"
+      ]
+    },
+    "color_006020": {
+      "textures": [
+        "textures/blocks/colorblock/color_006020"
+      ]
+    },
+    "color_006040": {
+      "textures": [
+        "textures/blocks/colorblock/color_006040"
+      ]
+    },
+    "color_006060": {
+      "textures": [
+        "textures/blocks/colorblock/color_006060"
+      ]
+    },
+    "color_006080": {
+      "textures": [
+        "textures/blocks/colorblock/color_006080"
+      ]
+    },
+    "color_0060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0060a0"
+      ]
+    },
+    "color_0060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0060c0"
+      ]
+    },
+    "color_0060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0060e0"
+      ]
+    },
+    "color_0060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_0060ff"
+      ]
+    },
+    "color_008000": {
+      "textures": [
+        "textures/blocks/colorblock/color_008000"
+      ]
+    },
+    "color_008020": {
+      "textures": [
+        "textures/blocks/colorblock/color_008020"
+      ]
+    },
+    "color_008040": {
+      "textures": [
+        "textures/blocks/colorblock/color_008040"
+      ]
+    },
+    "color_008060": {
+      "textures": [
+        "textures/blocks/colorblock/color_008060"
+      ]
+    },
+    "color_008080": {
+      "textures": [
+        "textures/blocks/colorblock/color_008080"
+      ]
+    },
+    "color_0080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0080a0"
+      ]
+    },
+    "color_0080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0080c0"
+      ]
+    },
+    "color_0080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_0080e0"
+      ]
+    },
+    "color_0080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_0080ff"
+      ]
+    },
+    "color_00a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a000"
+      ]
+    },
+    "color_00a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a020"
+      ]
+    },
+    "color_00a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a040"
+      ]
+    },
+    "color_00a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a060"
+      ]
+    },
+    "color_00a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a080"
+      ]
+    },
+    "color_00a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a0a0"
+      ]
+    },
+    "color_00a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a0c0"
+      ]
+    },
+    "color_00a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a0e0"
+      ]
+    },
+    "color_00a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_00a0ff"
+      ]
+    },
+    "color_00c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c000"
+      ]
+    },
+    "color_00c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c020"
+      ]
+    },
+    "color_00c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c040"
+      ]
+    },
+    "color_00c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c060"
+      ]
+    },
+    "color_00c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c080"
+      ]
+    },
+    "color_00c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c0a0"
+      ]
+    },
+    "color_00c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c0c0"
+      ]
+    },
+    "color_00c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c0e0"
+      ]
+    },
+    "color_00c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_00c0ff"
+      ]
+    },
+    "color_00e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e000"
+      ]
+    },
+    "color_00e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e020"
+      ]
+    },
+    "color_00e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e040"
+      ]
+    },
+    "color_00e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e060"
+      ]
+    },
+    "color_00e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e080"
+      ]
+    },
+    "color_00e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e0a0"
+      ]
+    },
+    "color_00e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e0c0"
+      ]
+    },
+    "color_00e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e0e0"
+      ]
+    },
+    "color_00e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_00e0ff"
+      ]
+    },
+    "color_00ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ff00"
+      ]
+    },
+    "color_00ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ff20"
+      ]
+    },
+    "color_00ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ff40"
+      ]
+    },
+    "color_00ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ff60"
+      ]
+    },
+    "color_00ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ff80"
+      ]
+    },
+    "color_00ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ffa0"
+      ]
+    },
+    "color_00ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ffc0"
+      ]
+    },
+    "color_00ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ffe0"
+      ]
+    },
+    "color_00ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_00ffff"
+      ]
+    },
+    "color_200000": {
+      "textures": [
+        "textures/blocks/colorblock/color_200000"
+      ]
+    },
+    "color_200020": {
+      "textures": [
+        "textures/blocks/colorblock/color_200020"
+      ]
+    },
+    "color_200040": {
+      "textures": [
+        "textures/blocks/colorblock/color_200040"
+      ]
+    },
+    "color_200060": {
+      "textures": [
+        "textures/blocks/colorblock/color_200060"
+      ]
+    },
+    "color_200080": {
+      "textures": [
+        "textures/blocks/colorblock/color_200080"
+      ]
+    },
+    "color_2000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2000a0"
+      ]
+    },
+    "color_2000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2000c0"
+      ]
+    },
+    "color_2000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2000e0"
+      ]
+    },
+    "color_2000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_2000ff"
+      ]
+    },
+    "color_202000": {
+      "textures": [
+        "textures/blocks/colorblock/color_202000"
+      ]
+    },
+    "color_202020": {
+      "textures": [
+        "textures/blocks/colorblock/color_202020"
+      ]
+    },
+    "color_202040": {
+      "textures": [
+        "textures/blocks/colorblock/color_202040"
+      ]
+    },
+    "color_202060": {
+      "textures": [
+        "textures/blocks/colorblock/color_202060"
+      ]
+    },
+    "color_202080": {
+      "textures": [
+        "textures/blocks/colorblock/color_202080"
+      ]
+    },
+    "color_2020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2020a0"
+      ]
+    },
+    "color_2020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2020c0"
+      ]
+    },
+    "color_2020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2020e0"
+      ]
+    },
+    "color_2020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_2020ff"
+      ]
+    },
+    "color_204000": {
+      "textures": [
+        "textures/blocks/colorblock/color_204000"
+      ]
+    },
+    "color_204020": {
+      "textures": [
+        "textures/blocks/colorblock/color_204020"
+      ]
+    },
+    "color_204040": {
+      "textures": [
+        "textures/blocks/colorblock/color_204040"
+      ]
+    },
+    "color_204060": {
+      "textures": [
+        "textures/blocks/colorblock/color_204060"
+      ]
+    },
+    "color_204080": {
+      "textures": [
+        "textures/blocks/colorblock/color_204080"
+      ]
+    },
+    "color_2040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2040a0"
+      ]
+    },
+    "color_2040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2040c0"
+      ]
+    },
+    "color_2040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2040e0"
+      ]
+    },
+    "color_2040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_2040ff"
+      ]
+    },
+    "color_206000": {
+      "textures": [
+        "textures/blocks/colorblock/color_206000"
+      ]
+    },
+    "color_206020": {
+      "textures": [
+        "textures/blocks/colorblock/color_206020"
+      ]
+    },
+    "color_206040": {
+      "textures": [
+        "textures/blocks/colorblock/color_206040"
+      ]
+    },
+    "color_206060": {
+      "textures": [
+        "textures/blocks/colorblock/color_206060"
+      ]
+    },
+    "color_206080": {
+      "textures": [
+        "textures/blocks/colorblock/color_206080"
+      ]
+    },
+    "color_2060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2060a0"
+      ]
+    },
+    "color_2060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2060c0"
+      ]
+    },
+    "color_2060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2060e0"
+      ]
+    },
+    "color_2060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_2060ff"
+      ]
+    },
+    "color_208000": {
+      "textures": [
+        "textures/blocks/colorblock/color_208000"
+      ]
+    },
+    "color_208020": {
+      "textures": [
+        "textures/blocks/colorblock/color_208020"
+      ]
+    },
+    "color_208040": {
+      "textures": [
+        "textures/blocks/colorblock/color_208040"
+      ]
+    },
+    "color_208060": {
+      "textures": [
+        "textures/blocks/colorblock/color_208060"
+      ]
+    },
+    "color_208080": {
+      "textures": [
+        "textures/blocks/colorblock/color_208080"
+      ]
+    },
+    "color_2080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2080a0"
+      ]
+    },
+    "color_2080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2080c0"
+      ]
+    },
+    "color_2080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_2080e0"
+      ]
+    },
+    "color_2080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_2080ff"
+      ]
+    },
+    "color_20a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a000"
+      ]
+    },
+    "color_20a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a020"
+      ]
+    },
+    "color_20a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a040"
+      ]
+    },
+    "color_20a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a060"
+      ]
+    },
+    "color_20a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a080"
+      ]
+    },
+    "color_20a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a0a0"
+      ]
+    },
+    "color_20a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a0c0"
+      ]
+    },
+    "color_20a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a0e0"
+      ]
+    },
+    "color_20a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_20a0ff"
+      ]
+    },
+    "color_20c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c000"
+      ]
+    },
+    "color_20c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c020"
+      ]
+    },
+    "color_20c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c040"
+      ]
+    },
+    "color_20c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c060"
+      ]
+    },
+    "color_20c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c080"
+      ]
+    },
+    "color_20c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c0a0"
+      ]
+    },
+    "color_20c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c0c0"
+      ]
+    },
+    "color_20c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c0e0"
+      ]
+    },
+    "color_20c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_20c0ff"
+      ]
+    },
+    "color_20e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e000"
+      ]
+    },
+    "color_20e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e020"
+      ]
+    },
+    "color_20e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e040"
+      ]
+    },
+    "color_20e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e060"
+      ]
+    },
+    "color_20e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e080"
+      ]
+    },
+    "color_20e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e0a0"
+      ]
+    },
+    "color_20e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e0c0"
+      ]
+    },
+    "color_20e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e0e0"
+      ]
+    },
+    "color_20e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_20e0ff"
+      ]
+    },
+    "color_20ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ff00"
+      ]
+    },
+    "color_20ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ff20"
+      ]
+    },
+    "color_20ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ff40"
+      ]
+    },
+    "color_20ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ff60"
+      ]
+    },
+    "color_20ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ff80"
+      ]
+    },
+    "color_20ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ffa0"
+      ]
+    },
+    "color_20ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ffc0"
+      ]
+    },
+    "color_20ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ffe0"
+      ]
+    },
+    "color_20ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_20ffff"
+      ]
+    },
+    "color_400000": {
+      "textures": [
+        "textures/blocks/colorblock/color_400000"
+      ]
+    },
+    "color_400020": {
+      "textures": [
+        "textures/blocks/colorblock/color_400020"
+      ]
+    },
+    "color_400040": {
+      "textures": [
+        "textures/blocks/colorblock/color_400040"
+      ]
+    },
+    "color_400060": {
+      "textures": [
+        "textures/blocks/colorblock/color_400060"
+      ]
+    },
+    "color_400080": {
+      "textures": [
+        "textures/blocks/colorblock/color_400080"
+      ]
+    },
+    "color_4000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4000a0"
+      ]
+    },
+    "color_4000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4000c0"
+      ]
+    },
+    "color_4000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4000e0"
+      ]
+    },
+    "color_4000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_4000ff"
+      ]
+    },
+    "color_402000": {
+      "textures": [
+        "textures/blocks/colorblock/color_402000"
+      ]
+    },
+    "color_402020": {
+      "textures": [
+        "textures/blocks/colorblock/color_402020"
+      ]
+    },
+    "color_402040": {
+      "textures": [
+        "textures/blocks/colorblock/color_402040"
+      ]
+    },
+    "color_402060": {
+      "textures": [
+        "textures/blocks/colorblock/color_402060"
+      ]
+    },
+    "color_402080": {
+      "textures": [
+        "textures/blocks/colorblock/color_402080"
+      ]
+    },
+    "color_4020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4020a0"
+      ]
+    },
+    "color_4020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4020c0"
+      ]
+    },
+    "color_4020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4020e0"
+      ]
+    },
+    "color_4020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_4020ff"
+      ]
+    },
+    "color_404000": {
+      "textures": [
+        "textures/blocks/colorblock/color_404000"
+      ]
+    },
+    "color_404020": {
+      "textures": [
+        "textures/blocks/colorblock/color_404020"
+      ]
+    },
+    "color_404040": {
+      "textures": [
+        "textures/blocks/colorblock/color_404040"
+      ]
+    },
+    "color_404060": {
+      "textures": [
+        "textures/blocks/colorblock/color_404060"
+      ]
+    },
+    "color_404080": {
+      "textures": [
+        "textures/blocks/colorblock/color_404080"
+      ]
+    },
+    "color_4040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4040a0"
+      ]
+    },
+    "color_4040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4040c0"
+      ]
+    },
+    "color_4040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4040e0"
+      ]
+    },
+    "color_4040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_4040ff"
+      ]
+    },
+    "color_406000": {
+      "textures": [
+        "textures/blocks/colorblock/color_406000"
+      ]
+    },
+    "color_406020": {
+      "textures": [
+        "textures/blocks/colorblock/color_406020"
+      ]
+    },
+    "color_406040": {
+      "textures": [
+        "textures/blocks/colorblock/color_406040"
+      ]
+    },
+    "color_406060": {
+      "textures": [
+        "textures/blocks/colorblock/color_406060"
+      ]
+    },
+    "color_406080": {
+      "textures": [
+        "textures/blocks/colorblock/color_406080"
+      ]
+    },
+    "color_4060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4060a0"
+      ]
+    },
+    "color_4060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4060c0"
+      ]
+    },
+    "color_4060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4060e0"
+      ]
+    },
+    "color_4060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_4060ff"
+      ]
+    },
+    "color_408000": {
+      "textures": [
+        "textures/blocks/colorblock/color_408000"
+      ]
+    },
+    "color_408020": {
+      "textures": [
+        "textures/blocks/colorblock/color_408020"
+      ]
+    },
+    "color_408040": {
+      "textures": [
+        "textures/blocks/colorblock/color_408040"
+      ]
+    },
+    "color_408060": {
+      "textures": [
+        "textures/blocks/colorblock/color_408060"
+      ]
+    },
+    "color_408080": {
+      "textures": [
+        "textures/blocks/colorblock/color_408080"
+      ]
+    },
+    "color_4080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4080a0"
+      ]
+    },
+    "color_4080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4080c0"
+      ]
+    },
+    "color_4080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_4080e0"
+      ]
+    },
+    "color_4080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_4080ff"
+      ]
+    },
+    "color_40a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a000"
+      ]
+    },
+    "color_40a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a020"
+      ]
+    },
+    "color_40a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a040"
+      ]
+    },
+    "color_40a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a060"
+      ]
+    },
+    "color_40a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a080"
+      ]
+    },
+    "color_40a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a0a0"
+      ]
+    },
+    "color_40a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a0c0"
+      ]
+    },
+    "color_40a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a0e0"
+      ]
+    },
+    "color_40a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_40a0ff"
+      ]
+    },
+    "color_40c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c000"
+      ]
+    },
+    "color_40c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c020"
+      ]
+    },
+    "color_40c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c040"
+      ]
+    },
+    "color_40c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c060"
+      ]
+    },
+    "color_40c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c080"
+      ]
+    },
+    "color_40c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c0a0"
+      ]
+    },
+    "color_40c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c0c0"
+      ]
+    },
+    "color_40c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c0e0"
+      ]
+    },
+    "color_40c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_40c0ff"
+      ]
+    },
+    "color_40e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e000"
+      ]
+    },
+    "color_40e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e020"
+      ]
+    },
+    "color_40e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e040"
+      ]
+    },
+    "color_40e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e060"
+      ]
+    },
+    "color_40e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e080"
+      ]
+    },
+    "color_40e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e0a0"
+      ]
+    },
+    "color_40e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e0c0"
+      ]
+    },
+    "color_40e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e0e0"
+      ]
+    },
+    "color_40e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_40e0ff"
+      ]
+    },
+    "color_40ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ff00"
+      ]
+    },
+    "color_40ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ff20"
+      ]
+    },
+    "color_40ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ff40"
+      ]
+    },
+    "color_40ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ff60"
+      ]
+    },
+    "color_40ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ff80"
+      ]
+    },
+    "color_40ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ffa0"
+      ]
+    },
+    "color_40ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ffc0"
+      ]
+    },
+    "color_40ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ffe0"
+      ]
+    },
+    "color_40ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_40ffff"
+      ]
+    },
+    "color_600000": {
+      "textures": [
+        "textures/blocks/colorblock/color_600000"
+      ]
+    },
+    "color_600020": {
+      "textures": [
+        "textures/blocks/colorblock/color_600020"
+      ]
+    },
+    "color_600040": {
+      "textures": [
+        "textures/blocks/colorblock/color_600040"
+      ]
+    },
+    "color_600060": {
+      "textures": [
+        "textures/blocks/colorblock/color_600060"
+      ]
+    },
+    "color_600080": {
+      "textures": [
+        "textures/blocks/colorblock/color_600080"
+      ]
+    },
+    "color_6000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6000a0"
+      ]
+    },
+    "color_6000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6000c0"
+      ]
+    },
+    "color_6000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6000e0"
+      ]
+    },
+    "color_6000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_6000ff"
+      ]
+    },
+    "color_602000": {
+      "textures": [
+        "textures/blocks/colorblock/color_602000"
+      ]
+    },
+    "color_602020": {
+      "textures": [
+        "textures/blocks/colorblock/color_602020"
+      ]
+    },
+    "color_602040": {
+      "textures": [
+        "textures/blocks/colorblock/color_602040"
+      ]
+    },
+    "color_602060": {
+      "textures": [
+        "textures/blocks/colorblock/color_602060"
+      ]
+    },
+    "color_602080": {
+      "textures": [
+        "textures/blocks/colorblock/color_602080"
+      ]
+    },
+    "color_6020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6020a0"
+      ]
+    },
+    "color_6020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6020c0"
+      ]
+    },
+    "color_6020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6020e0"
+      ]
+    },
+    "color_6020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_6020ff"
+      ]
+    },
+    "color_604000": {
+      "textures": [
+        "textures/blocks/colorblock/color_604000"
+      ]
+    },
+    "color_604020": {
+      "textures": [
+        "textures/blocks/colorblock/color_604020"
+      ]
+    },
+    "color_604040": {
+      "textures": [
+        "textures/blocks/colorblock/color_604040"
+      ]
+    },
+    "color_604060": {
+      "textures": [
+        "textures/blocks/colorblock/color_604060"
+      ]
+    },
+    "color_604080": {
+      "textures": [
+        "textures/blocks/colorblock/color_604080"
+      ]
+    },
+    "color_6040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6040a0"
+      ]
+    },
+    "color_6040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6040c0"
+      ]
+    },
+    "color_6040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6040e0"
+      ]
+    },
+    "color_6040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_6040ff"
+      ]
+    },
+    "color_606000": {
+      "textures": [
+        "textures/blocks/colorblock/color_606000"
+      ]
+    },
+    "color_606020": {
+      "textures": [
+        "textures/blocks/colorblock/color_606020"
+      ]
+    },
+    "color_606040": {
+      "textures": [
+        "textures/blocks/colorblock/color_606040"
+      ]
+    },
+    "color_606060": {
+      "textures": [
+        "textures/blocks/colorblock/color_606060"
+      ]
+    },
+    "color_606080": {
+      "textures": [
+        "textures/blocks/colorblock/color_606080"
+      ]
+    },
+    "color_6060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6060a0"
+      ]
+    },
+    "color_6060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6060c0"
+      ]
+    },
+    "color_6060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6060e0"
+      ]
+    },
+    "color_6060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_6060ff"
+      ]
+    },
+    "color_608000": {
+      "textures": [
+        "textures/blocks/colorblock/color_608000"
+      ]
+    },
+    "color_608020": {
+      "textures": [
+        "textures/blocks/colorblock/color_608020"
+      ]
+    },
+    "color_608040": {
+      "textures": [
+        "textures/blocks/colorblock/color_608040"
+      ]
+    },
+    "color_608060": {
+      "textures": [
+        "textures/blocks/colorblock/color_608060"
+      ]
+    },
+    "color_608080": {
+      "textures": [
+        "textures/blocks/colorblock/color_608080"
+      ]
+    },
+    "color_6080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6080a0"
+      ]
+    },
+    "color_6080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6080c0"
+      ]
+    },
+    "color_6080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_6080e0"
+      ]
+    },
+    "color_6080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_6080ff"
+      ]
+    },
+    "color_60a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a000"
+      ]
+    },
+    "color_60a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a020"
+      ]
+    },
+    "color_60a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a040"
+      ]
+    },
+    "color_60a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a060"
+      ]
+    },
+    "color_60a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a080"
+      ]
+    },
+    "color_60a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a0a0"
+      ]
+    },
+    "color_60a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a0c0"
+      ]
+    },
+    "color_60a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a0e0"
+      ]
+    },
+    "color_60a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_60a0ff"
+      ]
+    },
+    "color_60c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c000"
+      ]
+    },
+    "color_60c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c020"
+      ]
+    },
+    "color_60c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c040"
+      ]
+    },
+    "color_60c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c060"
+      ]
+    },
+    "color_60c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c080"
+      ]
+    },
+    "color_60c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c0a0"
+      ]
+    },
+    "color_60c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c0c0"
+      ]
+    },
+    "color_60c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c0e0"
+      ]
+    },
+    "color_60c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_60c0ff"
+      ]
+    },
+    "color_60e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e000"
+      ]
+    },
+    "color_60e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e020"
+      ]
+    },
+    "color_60e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e040"
+      ]
+    },
+    "color_60e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e060"
+      ]
+    },
+    "color_60e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e080"
+      ]
+    },
+    "color_60e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e0a0"
+      ]
+    },
+    "color_60e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e0c0"
+      ]
+    },
+    "color_60e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e0e0"
+      ]
+    },
+    "color_60e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_60e0ff"
+      ]
+    },
+    "color_60ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ff00"
+      ]
+    },
+    "color_60ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ff20"
+      ]
+    },
+    "color_60ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ff40"
+      ]
+    },
+    "color_60ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ff60"
+      ]
+    },
+    "color_60ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ff80"
+      ]
+    },
+    "color_60ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ffa0"
+      ]
+    },
+    "color_60ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ffc0"
+      ]
+    },
+    "color_60ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ffe0"
+      ]
+    },
+    "color_60ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_60ffff"
+      ]
+    },
+    "color_800000": {
+      "textures": [
+        "textures/blocks/colorblock/color_800000"
+      ]
+    },
+    "color_800020": {
+      "textures": [
+        "textures/blocks/colorblock/color_800020"
+      ]
+    },
+    "color_800040": {
+      "textures": [
+        "textures/blocks/colorblock/color_800040"
+      ]
+    },
+    "color_800060": {
+      "textures": [
+        "textures/blocks/colorblock/color_800060"
+      ]
+    },
+    "color_800080": {
+      "textures": [
+        "textures/blocks/colorblock/color_800080"
+      ]
+    },
+    "color_8000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8000a0"
+      ]
+    },
+    "color_8000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8000c0"
+      ]
+    },
+    "color_8000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8000e0"
+      ]
+    },
+    "color_8000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_8000ff"
+      ]
+    },
+    "color_802000": {
+      "textures": [
+        "textures/blocks/colorblock/color_802000"
+      ]
+    },
+    "color_802020": {
+      "textures": [
+        "textures/blocks/colorblock/color_802020"
+      ]
+    },
+    "color_802040": {
+      "textures": [
+        "textures/blocks/colorblock/color_802040"
+      ]
+    },
+    "color_802060": {
+      "textures": [
+        "textures/blocks/colorblock/color_802060"
+      ]
+    },
+    "color_802080": {
+      "textures": [
+        "textures/blocks/colorblock/color_802080"
+      ]
+    },
+    "color_8020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8020a0"
+      ]
+    },
+    "color_8020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8020c0"
+      ]
+    },
+    "color_8020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8020e0"
+      ]
+    },
+    "color_8020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_8020ff"
+      ]
+    },
+    "color_804000": {
+      "textures": [
+        "textures/blocks/colorblock/color_804000"
+      ]
+    },
+    "color_804020": {
+      "textures": [
+        "textures/blocks/colorblock/color_804020"
+      ]
+    },
+    "color_804040": {
+      "textures": [
+        "textures/blocks/colorblock/color_804040"
+      ]
+    },
+    "color_804060": {
+      "textures": [
+        "textures/blocks/colorblock/color_804060"
+      ]
+    },
+    "color_804080": {
+      "textures": [
+        "textures/blocks/colorblock/color_804080"
+      ]
+    },
+    "color_8040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8040a0"
+      ]
+    },
+    "color_8040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8040c0"
+      ]
+    },
+    "color_8040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8040e0"
+      ]
+    },
+    "color_8040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_8040ff"
+      ]
+    },
+    "color_806000": {
+      "textures": [
+        "textures/blocks/colorblock/color_806000"
+      ]
+    },
+    "color_806020": {
+      "textures": [
+        "textures/blocks/colorblock/color_806020"
+      ]
+    },
+    "color_806040": {
+      "textures": [
+        "textures/blocks/colorblock/color_806040"
+      ]
+    },
+    "color_806060": {
+      "textures": [
+        "textures/blocks/colorblock/color_806060"
+      ]
+    },
+    "color_806080": {
+      "textures": [
+        "textures/blocks/colorblock/color_806080"
+      ]
+    },
+    "color_8060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8060a0"
+      ]
+    },
+    "color_8060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8060c0"
+      ]
+    },
+    "color_8060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8060e0"
+      ]
+    },
+    "color_8060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_8060ff"
+      ]
+    },
+    "color_808000": {
+      "textures": [
+        "textures/blocks/colorblock/color_808000"
+      ]
+    },
+    "color_808020": {
+      "textures": [
+        "textures/blocks/colorblock/color_808020"
+      ]
+    },
+    "color_808040": {
+      "textures": [
+        "textures/blocks/colorblock/color_808040"
+      ]
+    },
+    "color_808060": {
+      "textures": [
+        "textures/blocks/colorblock/color_808060"
+      ]
+    },
+    "color_808080": {
+      "textures": [
+        "textures/blocks/colorblock/color_808080"
+      ]
+    },
+    "color_8080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8080a0"
+      ]
+    },
+    "color_8080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8080c0"
+      ]
+    },
+    "color_8080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_8080e0"
+      ]
+    },
+    "color_8080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_8080ff"
+      ]
+    },
+    "color_80a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a000"
+      ]
+    },
+    "color_80a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a020"
+      ]
+    },
+    "color_80a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a040"
+      ]
+    },
+    "color_80a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a060"
+      ]
+    },
+    "color_80a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a080"
+      ]
+    },
+    "color_80a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a0a0"
+      ]
+    },
+    "color_80a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a0c0"
+      ]
+    },
+    "color_80a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a0e0"
+      ]
+    },
+    "color_80a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_80a0ff"
+      ]
+    },
+    "color_80c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c000"
+      ]
+    },
+    "color_80c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c020"
+      ]
+    },
+    "color_80c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c040"
+      ]
+    },
+    "color_80c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c060"
+      ]
+    },
+    "color_80c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c080"
+      ]
+    },
+    "color_80c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c0a0"
+      ]
+    },
+    "color_80c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c0c0"
+      ]
+    },
+    "color_80c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c0e0"
+      ]
+    },
+    "color_80c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_80c0ff"
+      ]
+    },
+    "color_80e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e000"
+      ]
+    },
+    "color_80e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e020"
+      ]
+    },
+    "color_80e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e040"
+      ]
+    },
+    "color_80e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e060"
+      ]
+    },
+    "color_80e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e080"
+      ]
+    },
+    "color_80e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e0a0"
+      ]
+    },
+    "color_80e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e0c0"
+      ]
+    },
+    "color_80e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e0e0"
+      ]
+    },
+    "color_80e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_80e0ff"
+      ]
+    },
+    "color_80ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ff00"
+      ]
+    },
+    "color_80ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ff20"
+      ]
+    },
+    "color_80ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ff40"
+      ]
+    },
+    "color_80ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ff60"
+      ]
+    },
+    "color_80ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ff80"
+      ]
+    },
+    "color_80ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ffa0"
+      ]
+    },
+    "color_80ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ffc0"
+      ]
+    },
+    "color_80ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ffe0"
+      ]
+    },
+    "color_80ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_80ffff"
+      ]
+    },
+    "color_a00000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a00000"
+      ]
+    },
+    "color_a00020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a00020"
+      ]
+    },
+    "color_a00040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a00040"
+      ]
+    },
+    "color_a00060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a00060"
+      ]
+    },
+    "color_a00080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a00080"
+      ]
+    },
+    "color_a000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a000a0"
+      ]
+    },
+    "color_a000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a000c0"
+      ]
+    },
+    "color_a000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a000e0"
+      ]
+    },
+    "color_a000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a000ff"
+      ]
+    },
+    "color_a02000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a02000"
+      ]
+    },
+    "color_a02020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a02020"
+      ]
+    },
+    "color_a02040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a02040"
+      ]
+    },
+    "color_a02060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a02060"
+      ]
+    },
+    "color_a02080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a02080"
+      ]
+    },
+    "color_a020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a020a0"
+      ]
+    },
+    "color_a020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a020c0"
+      ]
+    },
+    "color_a020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a020e0"
+      ]
+    },
+    "color_a020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a020ff"
+      ]
+    },
+    "color_a04000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a04000"
+      ]
+    },
+    "color_a04020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a04020"
+      ]
+    },
+    "color_a04040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a04040"
+      ]
+    },
+    "color_a04060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a04060"
+      ]
+    },
+    "color_a04080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a04080"
+      ]
+    },
+    "color_a040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a040a0"
+      ]
+    },
+    "color_a040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a040c0"
+      ]
+    },
+    "color_a040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a040e0"
+      ]
+    },
+    "color_a040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a040ff"
+      ]
+    },
+    "color_a06000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a06000"
+      ]
+    },
+    "color_a06020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a06020"
+      ]
+    },
+    "color_a06040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a06040"
+      ]
+    },
+    "color_a06060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a06060"
+      ]
+    },
+    "color_a06080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a06080"
+      ]
+    },
+    "color_a060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a060a0"
+      ]
+    },
+    "color_a060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a060c0"
+      ]
+    },
+    "color_a060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a060e0"
+      ]
+    },
+    "color_a060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a060ff"
+      ]
+    },
+    "color_a08000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a08000"
+      ]
+    },
+    "color_a08020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a08020"
+      ]
+    },
+    "color_a08040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a08040"
+      ]
+    },
+    "color_a08060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a08060"
+      ]
+    },
+    "color_a08080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a08080"
+      ]
+    },
+    "color_a080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a080a0"
+      ]
+    },
+    "color_a080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a080c0"
+      ]
+    },
+    "color_a080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a080e0"
+      ]
+    },
+    "color_a080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a080ff"
+      ]
+    },
+    "color_a0a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a000"
+      ]
+    },
+    "color_a0a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a020"
+      ]
+    },
+    "color_a0a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a040"
+      ]
+    },
+    "color_a0a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a060"
+      ]
+    },
+    "color_a0a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a080"
+      ]
+    },
+    "color_a0a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a0a0"
+      ]
+    },
+    "color_a0a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a0c0"
+      ]
+    },
+    "color_a0a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a0e0"
+      ]
+    },
+    "color_a0a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0a0ff"
+      ]
+    },
+    "color_a0c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c000"
+      ]
+    },
+    "color_a0c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c020"
+      ]
+    },
+    "color_a0c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c040"
+      ]
+    },
+    "color_a0c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c060"
+      ]
+    },
+    "color_a0c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c080"
+      ]
+    },
+    "color_a0c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c0a0"
+      ]
+    },
+    "color_a0c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c0c0"
+      ]
+    },
+    "color_a0c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c0e0"
+      ]
+    },
+    "color_a0c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0c0ff"
+      ]
+    },
+    "color_a0e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e000"
+      ]
+    },
+    "color_a0e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e020"
+      ]
+    },
+    "color_a0e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e040"
+      ]
+    },
+    "color_a0e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e060"
+      ]
+    },
+    "color_a0e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e080"
+      ]
+    },
+    "color_a0e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e0a0"
+      ]
+    },
+    "color_a0e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e0c0"
+      ]
+    },
+    "color_a0e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e0e0"
+      ]
+    },
+    "color_a0e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0e0ff"
+      ]
+    },
+    "color_a0ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ff00"
+      ]
+    },
+    "color_a0ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ff20"
+      ]
+    },
+    "color_a0ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ff40"
+      ]
+    },
+    "color_a0ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ff60"
+      ]
+    },
+    "color_a0ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ff80"
+      ]
+    },
+    "color_a0ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ffa0"
+      ]
+    },
+    "color_a0ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ffc0"
+      ]
+    },
+    "color_a0ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ffe0"
+      ]
+    },
+    "color_a0ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_a0ffff"
+      ]
+    },
+    "color_c00000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c00000"
+      ]
+    },
+    "color_c00020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c00020"
+      ]
+    },
+    "color_c00040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c00040"
+      ]
+    },
+    "color_c00060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c00060"
+      ]
+    },
+    "color_c00080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c00080"
+      ]
+    },
+    "color_c000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c000a0"
+      ]
+    },
+    "color_c000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c000c0"
+      ]
+    },
+    "color_c000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c000e0"
+      ]
+    },
+    "color_c000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c000ff"
+      ]
+    },
+    "color_c02000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c02000"
+      ]
+    },
+    "color_c02020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c02020"
+      ]
+    },
+    "color_c02040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c02040"
+      ]
+    },
+    "color_c02060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c02060"
+      ]
+    },
+    "color_c02080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c02080"
+      ]
+    },
+    "color_c020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c020a0"
+      ]
+    },
+    "color_c020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c020c0"
+      ]
+    },
+    "color_c020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c020e0"
+      ]
+    },
+    "color_c020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c020ff"
+      ]
+    },
+    "color_c04000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c04000"
+      ]
+    },
+    "color_c04020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c04020"
+      ]
+    },
+    "color_c04040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c04040"
+      ]
+    },
+    "color_c04060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c04060"
+      ]
+    },
+    "color_c04080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c04080"
+      ]
+    },
+    "color_c040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c040a0"
+      ]
+    },
+    "color_c040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c040c0"
+      ]
+    },
+    "color_c040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c040e0"
+      ]
+    },
+    "color_c040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c040ff"
+      ]
+    },
+    "color_c06000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c06000"
+      ]
+    },
+    "color_c06020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c06020"
+      ]
+    },
+    "color_c06040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c06040"
+      ]
+    },
+    "color_c06060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c06060"
+      ]
+    },
+    "color_c06080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c06080"
+      ]
+    },
+    "color_c060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c060a0"
+      ]
+    },
+    "color_c060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c060c0"
+      ]
+    },
+    "color_c060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c060e0"
+      ]
+    },
+    "color_c060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c060ff"
+      ]
+    },
+    "color_c08000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c08000"
+      ]
+    },
+    "color_c08020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c08020"
+      ]
+    },
+    "color_c08040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c08040"
+      ]
+    },
+    "color_c08060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c08060"
+      ]
+    },
+    "color_c08080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c08080"
+      ]
+    },
+    "color_c080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c080a0"
+      ]
+    },
+    "color_c080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c080c0"
+      ]
+    },
+    "color_c080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c080e0"
+      ]
+    },
+    "color_c080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c080ff"
+      ]
+    },
+    "color_c0a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a000"
+      ]
+    },
+    "color_c0a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a020"
+      ]
+    },
+    "color_c0a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a040"
+      ]
+    },
+    "color_c0a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a060"
+      ]
+    },
+    "color_c0a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a080"
+      ]
+    },
+    "color_c0a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a0a0"
+      ]
+    },
+    "color_c0a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a0c0"
+      ]
+    },
+    "color_c0a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a0e0"
+      ]
+    },
+    "color_c0a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0a0ff"
+      ]
+    },
+    "color_c0c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c000"
+      ]
+    },
+    "color_c0c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c020"
+      ]
+    },
+    "color_c0c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c040"
+      ]
+    },
+    "color_c0c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c060"
+      ]
+    },
+    "color_c0c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c080"
+      ]
+    },
+    "color_c0c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c0a0"
+      ]
+    },
+    "color_c0c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c0c0"
+      ]
+    },
+    "color_c0c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c0e0"
+      ]
+    },
+    "color_c0c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0c0ff"
+      ]
+    },
+    "color_c0e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e000"
+      ]
+    },
+    "color_c0e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e020"
+      ]
+    },
+    "color_c0e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e040"
+      ]
+    },
+    "color_c0e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e060"
+      ]
+    },
+    "color_c0e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e080"
+      ]
+    },
+    "color_c0e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e0a0"
+      ]
+    },
+    "color_c0e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e0c0"
+      ]
+    },
+    "color_c0e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e0e0"
+      ]
+    },
+    "color_c0e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0e0ff"
+      ]
+    },
+    "color_c0ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ff00"
+      ]
+    },
+    "color_c0ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ff20"
+      ]
+    },
+    "color_c0ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ff40"
+      ]
+    },
+    "color_c0ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ff60"
+      ]
+    },
+    "color_c0ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ff80"
+      ]
+    },
+    "color_c0ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ffa0"
+      ]
+    },
+    "color_c0ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ffc0"
+      ]
+    },
+    "color_c0ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ffe0"
+      ]
+    },
+    "color_c0ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_c0ffff"
+      ]
+    },
+    "color_e00000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e00000"
+      ]
+    },
+    "color_e00020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e00020"
+      ]
+    },
+    "color_e00040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e00040"
+      ]
+    },
+    "color_e00060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e00060"
+      ]
+    },
+    "color_e00080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e00080"
+      ]
+    },
+    "color_e000a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e000a0"
+      ]
+    },
+    "color_e000c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e000c0"
+      ]
+    },
+    "color_e000e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e000e0"
+      ]
+    },
+    "color_e000ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e000ff"
+      ]
+    },
+    "color_e02000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e02000"
+      ]
+    },
+    "color_e02020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e02020"
+      ]
+    },
+    "color_e02040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e02040"
+      ]
+    },
+    "color_e02060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e02060"
+      ]
+    },
+    "color_e02080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e02080"
+      ]
+    },
+    "color_e020a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e020a0"
+      ]
+    },
+    "color_e020c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e020c0"
+      ]
+    },
+    "color_e020e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e020e0"
+      ]
+    },
+    "color_e020ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e020ff"
+      ]
+    },
+    "color_e04000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e04000"
+      ]
+    },
+    "color_e04020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e04020"
+      ]
+    },
+    "color_e04040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e04040"
+      ]
+    },
+    "color_e04060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e04060"
+      ]
+    },
+    "color_e04080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e04080"
+      ]
+    },
+    "color_e040a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e040a0"
+      ]
+    },
+    "color_e040c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e040c0"
+      ]
+    },
+    "color_e040e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e040e0"
+      ]
+    },
+    "color_e040ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e040ff"
+      ]
+    },
+    "color_e06000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e06000"
+      ]
+    },
+    "color_e06020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e06020"
+      ]
+    },
+    "color_e06040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e06040"
+      ]
+    },
+    "color_e06060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e06060"
+      ]
+    },
+    "color_e06080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e06080"
+      ]
+    },
+    "color_e060a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e060a0"
+      ]
+    },
+    "color_e060c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e060c0"
+      ]
+    },
+    "color_e060e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e060e0"
+      ]
+    },
+    "color_e060ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e060ff"
+      ]
+    },
+    "color_e08000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e08000"
+      ]
+    },
+    "color_e08020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e08020"
+      ]
+    },
+    "color_e08040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e08040"
+      ]
+    },
+    "color_e08060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e08060"
+      ]
+    },
+    "color_e08080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e08080"
+      ]
+    },
+    "color_e080a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e080a0"
+      ]
+    },
+    "color_e080c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e080c0"
+      ]
+    },
+    "color_e080e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e080e0"
+      ]
+    },
+    "color_e080ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e080ff"
+      ]
+    },
+    "color_e0a000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a000"
+      ]
+    },
+    "color_e0a020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a020"
+      ]
+    },
+    "color_e0a040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a040"
+      ]
+    },
+    "color_e0a060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a060"
+      ]
+    },
+    "color_e0a080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a080"
+      ]
+    },
+    "color_e0a0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a0a0"
+      ]
+    },
+    "color_e0a0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a0c0"
+      ]
+    },
+    "color_e0a0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a0e0"
+      ]
+    },
+    "color_e0a0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0a0ff"
+      ]
+    },
+    "color_e0c000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c000"
+      ]
+    },
+    "color_e0c020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c020"
+      ]
+    },
+    "color_e0c040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c040"
+      ]
+    },
+    "color_e0c060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c060"
+      ]
+    },
+    "color_e0c080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c080"
+      ]
+    },
+    "color_e0c0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c0a0"
+      ]
+    },
+    "color_e0c0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c0c0"
+      ]
+    },
+    "color_e0c0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c0e0"
+      ]
+    },
+    "color_e0c0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0c0ff"
+      ]
+    },
+    "color_e0e000": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e000"
+      ]
+    },
+    "color_e0e020": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e020"
+      ]
+    },
+    "color_e0e040": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e040"
+      ]
+    },
+    "color_e0e060": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e060"
+      ]
+    },
+    "color_e0e080": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e080"
+      ]
+    },
+    "color_e0e0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e0a0"
+      ]
+    },
+    "color_e0e0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e0c0"
+      ]
+    },
+    "color_e0e0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e0e0"
+      ]
+    },
+    "color_e0e0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0e0ff"
+      ]
+    },
+    "color_e0ff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ff00"
+      ]
+    },
+    "color_e0ff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ff20"
+      ]
+    },
+    "color_e0ff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ff40"
+      ]
+    },
+    "color_e0ff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ff60"
+      ]
+    },
+    "color_e0ff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ff80"
+      ]
+    },
+    "color_e0ffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ffa0"
+      ]
+    },
+    "color_e0ffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ffc0"
+      ]
+    },
+    "color_e0ffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ffe0"
+      ]
+    },
+    "color_e0ffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_e0ffff"
+      ]
+    },
+    "color_ff0000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff0000"
+      ]
+    },
+    "color_ff0020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff0020"
+      ]
+    },
+    "color_ff0040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff0040"
+      ]
+    },
+    "color_ff0060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff0060"
+      ]
+    },
+    "color_ff0080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff0080"
+      ]
+    },
+    "color_ff00a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff00a0"
+      ]
+    },
+    "color_ff00c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff00c0"
+      ]
+    },
+    "color_ff00e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff00e0"
+      ]
+    },
+    "color_ff00ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff00ff"
+      ]
+    },
+    "color_ff2000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff2000"
+      ]
+    },
+    "color_ff2020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff2020"
+      ]
+    },
+    "color_ff2040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff2040"
+      ]
+    },
+    "color_ff2060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff2060"
+      ]
+    },
+    "color_ff2080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff2080"
+      ]
+    },
+    "color_ff20a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff20a0"
+      ]
+    },
+    "color_ff20c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff20c0"
+      ]
+    },
+    "color_ff20e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff20e0"
+      ]
+    },
+    "color_ff20ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff20ff"
+      ]
+    },
+    "color_ff4000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff4000"
+      ]
+    },
+    "color_ff4020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff4020"
+      ]
+    },
+    "color_ff4040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff4040"
+      ]
+    },
+    "color_ff4060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff4060"
+      ]
+    },
+    "color_ff4080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff4080"
+      ]
+    },
+    "color_ff40a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff40a0"
+      ]
+    },
+    "color_ff40c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff40c0"
+      ]
+    },
+    "color_ff40e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff40e0"
+      ]
+    },
+    "color_ff40ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff40ff"
+      ]
+    },
+    "color_ff6000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff6000"
+      ]
+    },
+    "color_ff6020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff6020"
+      ]
+    },
+    "color_ff6040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff6040"
+      ]
+    },
+    "color_ff6060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff6060"
+      ]
+    },
+    "color_ff6080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff6080"
+      ]
+    },
+    "color_ff60a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff60a0"
+      ]
+    },
+    "color_ff60c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff60c0"
+      ]
+    },
+    "color_ff60e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff60e0"
+      ]
+    },
+    "color_ff60ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff60ff"
+      ]
+    },
+    "color_ff8000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff8000"
+      ]
+    },
+    "color_ff8020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff8020"
+      ]
+    },
+    "color_ff8040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff8040"
+      ]
+    },
+    "color_ff8060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff8060"
+      ]
+    },
+    "color_ff8080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff8080"
+      ]
+    },
+    "color_ff80a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff80a0"
+      ]
+    },
+    "color_ff80c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff80c0"
+      ]
+    },
+    "color_ff80e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff80e0"
+      ]
+    },
+    "color_ff80ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ff80ff"
+      ]
+    },
+    "color_ffa000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa000"
+      ]
+    },
+    "color_ffa020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa020"
+      ]
+    },
+    "color_ffa040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa040"
+      ]
+    },
+    "color_ffa060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa060"
+      ]
+    },
+    "color_ffa080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa080"
+      ]
+    },
+    "color_ffa0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa0a0"
+      ]
+    },
+    "color_ffa0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa0c0"
+      ]
+    },
+    "color_ffa0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa0e0"
+      ]
+    },
+    "color_ffa0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffa0ff"
+      ]
+    },
+    "color_ffc000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc000"
+      ]
+    },
+    "color_ffc020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc020"
+      ]
+    },
+    "color_ffc040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc040"
+      ]
+    },
+    "color_ffc060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc060"
+      ]
+    },
+    "color_ffc080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc080"
+      ]
+    },
+    "color_ffc0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc0a0"
+      ]
+    },
+    "color_ffc0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc0c0"
+      ]
+    },
+    "color_ffc0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc0e0"
+      ]
+    },
+    "color_ffc0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffc0ff"
+      ]
+    },
+    "color_ffe000": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe000"
+      ]
+    },
+    "color_ffe020": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe020"
+      ]
+    },
+    "color_ffe040": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe040"
+      ]
+    },
+    "color_ffe060": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe060"
+      ]
+    },
+    "color_ffe080": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe080"
+      ]
+    },
+    "color_ffe0a0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe0a0"
+      ]
+    },
+    "color_ffe0c0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe0c0"
+      ]
+    },
+    "color_ffe0e0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe0e0"
+      ]
+    },
+    "color_ffe0ff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffe0ff"
+      ]
+    },
+    "color_ffff00": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffff00"
+      ]
+    },
+    "color_ffff20": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffff20"
+      ]
+    },
+    "color_ffff40": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffff40"
+      ]
+    },
+    "color_ffff60": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffff60"
+      ]
+    },
+    "color_ffff80": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffff80"
+      ]
+    },
+    "color_ffffa0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffffa0"
+      ]
+    },
+    "color_ffffc0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffffc0"
+      ]
+    },
+    "color_ffffe0": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffffe0"
+      ]
+    },
+    "color_ffffff": {
+      "textures": [
+        "textures/blocks/colorblock/color_ffffff"
+      ]
+    }
   }
 }

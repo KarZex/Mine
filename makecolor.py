@@ -5,6 +5,7 @@ import json
 
 block_directory = "./behavior_packs/MissileAnd(2)/blocks/colorblock"
 block_texture_directory = "./resource_packs/MissileAnd(1)/textures/blocks/colorblock"
+terrain_texture_path = "./resource_packs/MissileAnd(1)/textures/terrain_texture.json"
 
 block_json_path = "./tool/colorblock.json"
 
@@ -39,5 +40,14 @@ for r_color in colors:
             replace = ( r_color,g_color,b_color )
             pixels[0, 0] = replace
             img.save(f"{block_texture_directory}/color_{block_color_id}.png")
+
+            with open(terrain_texture_path,"r") as f:
+                terrain_texture_json = json.load(f)
+                terrain_texture_json["texture_data"][f"color_{block_color_id}"] = { "textures": [ f"textures/blocks/colorblock/color_{block_color_id}" ] }
+
+            with open(terrain_texture_path,"w") as f:
+                json.dump(terrain_texture_json,f,indent=2) 
+
+            
 
 
